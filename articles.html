@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=320" />
+<title>Статьи</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/template.js"></script>
+</head>
+
+<body>
+<div class="main">
+  <div id="feedback" class="popup" style="display:none;">
+    <div class="title">Обратная связь</div>
+    <label>Ваш e-mail *</label>
+    <input name="" type="text">
+    <label>Контактный телефон *</label>
+    <input name="" type="text">
+    <label>Ваше сообщение *</label>
+    <textarea name="" cols="" rows=""></textarea>
+    <input name="" type="button" value="Отправить сообщение" class="btn btn-small btn-corral">
+  </div>
+  <div class="hide-mobile jquerymenu">
+    <div class="menu"><a href="#" class="btn-slide">Открыть меню</a></div>
+  </div>
+  <div id="slide-menu">
+    <ul>
+      <li><a href="#">Проекты</a>
+        <ul>
+          <li class="current"><a href="#">Все проекты</a></li>
+          <li><a href="#">Тип</a>
+            <ul>
+              <li><a href="#">Интерьеры</a></li>
+              <li><a href="#">Экстерьеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Функция</a>
+            <ul>
+              <li><a href="#">Жилье</a></li>
+              <li><a href="#">Общественные</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Место</a>
+            <ul>
+              <li><a href="#">Москва</a></li>
+              <li><a href="#">Днепропетровск</a></li>
+              <li><a href="#">Алушта</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Статус</a>
+            <ul>
+              <li><a href="#">Проект</a></li>
+              <li><a href="#">Реализация</a></li>
+              <li><a href="#">Конкурс</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+  </div>
+  <div class="wrapper no-mobile-header">
+    <div class="hide-on-menu-open">
+      <div class="header hide-mobile">
+        <div class="left"></div>
+        <div class="center">
+          <div class="logo"><a href="index.html">Artme</a></div>
+        </div>
+        <div class="right"></div>
+        <div class="clear"></div>
+      </div>
+      
+      <!--Left column-->
+      <div class="column column-left hide-desktop">
+        <div class="logo-inside"><a href="index.html">Artme</a>
+          <div class="logo-description">архитектурная студия</div>
+        </div>
+        <div class="clear"></div>
+        <ul class="mainmenu">
+          <li><a href="#">Проекты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li class="current"><span>Статьи</span></li>
+          <div class="clear"></div>
+        </ul>
+        <div class="search">
+          <input name="" type="text" placeholder="Поисковой запрос + Enter">
+        </div>
+        <div id="left-menu">
+          <ul>
+            <li><a href="#">Статьи по темам</a>
+              <ul>
+                <li><a href="#">Архитекрутные стили</a>
+                  <ul>
+                    <li><a href="#">Архитекрутные стили</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li class="current">Информационные</li>
+                    <li><a href="#">Интересное</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Проектирование</a></li>
+                <li><a href="#">Информационные</a></li>
+                <li><a href="#">Интересное</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Статьи по тегам</a>
+              <ul>
+                <li><a href="#">Архитектурные стили</a></li>
+                <li><a href="#">Визуализация</a></li>
+                <li><a href="#">Визуализация интерьера</a></li>
+                <li><a href="#">Визуализация кафе</a></li>
+                <li><a href="#">Визуализация квартиры</a></li>
+                <li><a href="#">Визуализация магазинов</a></li>
+                <li><a href="#">Визуализация офиса</a></li>
+                <li><a href="#">Дизайн бара</a></li>
+                <li><a href="#">Дизайн бутика</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Right column-->
+      <div class="column column-right">
+        <div class="page-header">
+          <h1>Статьи</h1>
+        </div>
+        <div class="articles category">
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/1.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/2.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/3.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/4.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/1.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/2.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/3.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/4.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/1.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Стиль Эклектика</a></div>
+            <div class="date">02/01/2015</div>
+            <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+            <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+        <!--Pagination-->
+        <div class="pagination">
+          <div class="title">Навигация по разделу</div>
+          <ul>
+            <li class="prev"><a href="#">Назад</a></li>
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a href="#">Вперед</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="hFooter"></div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="feedback hide-mobile"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a></div>
+    <div class="copyright">Студия Artme, 2011-2015 год.<br>
+      Дизайн интерьера, архитектурное проектирование.</div>
+    <div class="feedback hide-desktop"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a></div>
+    <div class="language">
+      <ul>
+        <li class="current">Rus</li>
+        <li><a href="#">Eng</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<script>
+	$('.bwWrapper').BlackAndWhite({
+		hoverEffect:true,
+		webworkerPath: 'src/'
+	});
+</script>
+</body>
+</html>
