@@ -1457,3 +1457,10 @@ margin:0;
 	margin-top: 20px;
 	font-family: 'DaxlinePro-Bold', Arial;
 }
+
+textarea.error,
+input.error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
