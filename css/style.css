@@ -1494,3 +1494,10 @@ margin:0;
 	margin-right: 1.5%;
 	margin-bottom: 3%;
 }
+    
+textarea.error,
+input.error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
