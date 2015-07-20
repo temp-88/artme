@@ -1360,13 +1360,6 @@ div#rotator ul li.show { z-index:500; }
 	width:100%;
 	height:100%;
 }
-.content-slider .image:hover .grayscale {
-	opacity:0;
-	-webkit-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
 .content-slider .image .grayscale {
 	opacity:1;
 	-webkit-transition: all 0.3s ease;
@@ -1414,6 +1407,7 @@ div#rotator ul li.show { z-index:500; }
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+.slider-blocks .column:hover img,
 .slider-blocks .column img:hover {
 	-webkit-filter: grayscale(0%);
 	-moz-filter: grayscale(0%);
