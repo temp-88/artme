@@ -149,7 +149,15 @@ a:hover {
 	float:left;
 	margin-right:30px;
 }
-.article-footer .tags a {
+.menu_title {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 5px 0px;
+    display: block;
+    color: #747474;
+}
+.tags a {
 	display:inline-block;
 	height:100%;
 	background-image:url(../img/tags_sprite_bg.jpg);
@@ -159,12 +167,13 @@ a:hover {
 	padding-left:25px;
 	line-height:30px;
 	margin-left:15px;
+	margin-bottom:5px;
 	-webkit-transition-duration: 0s;
 	-o-transition-duration: 0s;
 	-moz-transition-duration: 0s;
 	transition-duration: 0s;
 }
-.article-footer .tags a span {
+.tags a span {
 	float:right;
 	width:26px;
 	height:26px;
@@ -172,9 +181,14 @@ a:hover {
 	background-repeat:no-repeat;
 	background-position:-574px 0;
 }
-.article-footer .tags a:hover { background-position:0 -26px; }
-.article-footer .tags a:hover span { background-position:-574px -26px; }
+.tags a:hover,
+.tags a.current
+{ background-position:0 -26px; }
+.tags a.current span,
+.tags a:hover span 
+{ background-position:-574px -26px; }
 .article-footer .pluso-more { display:none !important; }
+#left-menu .article-footer .tags {}
 .articles.category .item .title {
 	font-size:21px;
 	margin-top:20px;
