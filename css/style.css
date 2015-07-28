@@ -173,6 +173,21 @@ a:hover {
 	-moz-transition-duration: 0s;
 	transition-duration: 0s;
 }
+
+#left-menu .tags a {
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 26px;
+}
+
+#left-menu .tags a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .tags a span {
 	float:right;
 	width:26px;
