@@ -1410,6 +1410,12 @@ div#rotator ul li.show { z-index:500; }
 	width:100%;
 	height:auto;
 }
+.slider-blocks .column:first-child img {
+    opacity: 1;
+}
+.slider-blocks .column:last-child img {
+    opacity: 0.8;
+}
 .slider-blocks .column img {
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -1421,6 +1427,7 @@ div#rotator ul li.show { z-index:500; }
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+    opacity: 0.9;
 }
 .slider-blocks .column:hover img,
 .slider-blocks .column img:hover {
