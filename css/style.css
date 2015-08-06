@@ -101,6 +101,7 @@ a:hover {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 }
 .articles .item .image:hover {
 	-webkit-filter: grayscale(0%);
@@ -113,6 +114,7 @@ a:hover {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	filter: none;
 }
 .articles .item .title { font-size:15px; }
 .articles .item .date {
@@ -1429,7 +1431,8 @@ div#rotator ul li.show { z-index:500; }
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-    opacity: 0.9;
+        opacity: 0.9;
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 }
 .slider-blocks .column:hover img,
 .slider-blocks .column img:hover {
@@ -1443,6 +1446,7 @@ div#rotator ul li.show { z-index:500; }
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	filter: none;
 }
 .slider-blocks .column .title {
 	position: absolute;
@@ -1556,4 +1560,22 @@ margin:0;
 @media (max-width:950px) {
 .more-articles { display:none; }
 .articles.category.single .item { width:100%; }
+}
+/*UPD 06.08.2015*/
+.project-linker a {
+	margin:0;
+	margin-right:20px;
+	margin-top:30px;
+}
+.nograyscale {
+	-webkit-filter: grayscale(0%) !important;
+	-moz-filter: grayscale(0%) !important;
+	-ms-filter: grayscale(0%) !important;
+	-o-filter: grayscale(0%) !important;
+	filter: grayscale(0%) !important;
+	filter: url(grayscale.svg) !important; /* Firefox 4+ */
+	filter: gray !important; /* IE 6-9 */
+	-webkit-transition: all 0.3s ease !important;
+	-moz-transition: all 0.3s ease !important;
+	transition: all 0.3s ease !important;
 }
