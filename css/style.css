@@ -133,10 +133,7 @@ a:hover {
 	padding:20px;
 }
 .articles.category.single { margin-top:-50px; }
-.articles.category.single .item {
-	width:100%;
-	float:none;
-}
+
 .articles.category.single .date {
 	margin-top:10px;
 	margin-bottom:15px;
@@ -146,7 +143,6 @@ a:hover {
 	margin-bottom:-20px;
 	margin-top:20px;
 }
-.article-footer .share { margin-top:-2px; }
 .article-footer .share, .article-footer .tags {
 	float:left;
 	margin-right:30px;
@@ -1531,3 +1527,4 @@ margin:0;
 	-moz-transition: all 0.3s ease !important;
 	transition: all 0.3s ease !important;
 }
+.articles .pagination { clear:left; margin:20px 0; }
