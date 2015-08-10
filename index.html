@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=320" />
+<title>Главная</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/lightslider.css"/>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/template.js"></script>
+<script src="js/lightslider.js"></script>
+<script>
+    	 $(document).ready(function() {
+			$("#content-slider,#content-slider-two,#content-slider-three").lightSlider({
+                loop:true,
+					 item:1,
+					 mode: "fade",
+					 auto:true,
+					 speed:4000,
+					 pause:10000,
+					 controls: false,
+					 pager: false,
+                keyPress:false
+            });
+		});
+</script>
+</head>
+
+<body class="homepage">
+<div class="main">
+  <div id="feedback" class="popup" style="display:none;">
+    <div class="title">Обратная связь</div>
+    <label>Ваш e-mail *</label>
+    <input name="" type="text">
+    <label>Контактный телефон *</label>
+    <input name="" type="text">
+    <label>Ваше сообщение *</label>
+    <textarea name="" cols="" rows=""></textarea>
+    <input name="" type="button" value="Отправить сообщение" class="btn btn-small btn-corral">
+  </div>
+  <div class="hide-mobile jquerymenu">
+    <div class="menu"><a href="#" class="btn-slide">Открыть меню</a></div>
+  </div>
+  <div id="slide-menu">
+    <ul>
+      <li><a href="#">Проекты</a>
+        <ul>
+          <li class="current"><a href="#">Все проекты</a></li>
+          <li><a href="#">Тип</a>
+            <ul>
+              <li><a href="#">Интерьеры</a></li>
+              <li><a href="#">Экстерьеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Функция</a>
+            <ul>
+              <li><a href="#">Жилье</a></li>
+              <li><a href="#">Общественные</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Место</a>
+            <ul>
+              <li><a href="#">Москва</a></li>
+              <li><a href="#">Днепропетровск</a></li>
+              <li><a href="#">Алушта</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Статус</a>
+            <ul>
+              <li><a href="#">Проект</a></li>
+              <li><a href="#">Реализация</a></li>
+              <li><a href="#">Конкурс</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+  </div>
+  <div class="wrapper">
+    <div class="hide-on-menu-open">
+      <div class="header">
+        <div class="left">
+          <div class="content">
+            <div class="town">Москва</div>
+            <div class="phone">+7 (499) 403-10-91</div>
+            <div class="phone">+7 (499) 346-70-47</div>
+            <div class="email"><a href="mailto:moscow@artme.org">moscow@artme.org</a></div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="logo"><a href="index.html">Artme</a></div>
+        </div>
+        <div class="right">
+          <div class="content">
+            <div class="town">Днепропетровск</div>
+            <div class="phone">+38 (050) 145-00-29</div>
+            <div class="phone">+38 (063) 714-49-89</div>
+            <div class="email"><a href="mailto:dnepr@artme.org">dnepr@artme.org</a></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="index-image hide-mobile">
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/index/1.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Проекты</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/index/2.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Студия</a></div>
+          </div>
+          <div class="item">
+            <div class="image"><a href="#"><img src="img/demo/index/3.jpg" width="100%"></a></div>
+            <div class="title"><a href="#">Статьи</a></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      <div class="clear"></div>
+      <div class="content-block hide-mobile align-center">
+        <p>Архитектурная студия ArtMe начала свою деятельность в 2011 году. За это период мы выполнили ряд дизайн-проектов частных и общественных интерьеров, разработали архитектурные проекты загородных домов, а также приняли участие в исследовании городской среды и нескольких международных архитектурных конкурсах.</p>
+      </div>
+      <div class="contact-block hide-mobile align-center">
+        <div class="content">
+          <div class="town">Москва</div>
+          <div class="phone">+7 (499) 403-10-91</div>
+          <div class="phone">+7 (499) 346-70-47</div>
+          <div class="email"><a href="mailto:moscow@artme.org">moscow@artme.org</a></div>
+        </div>
+        <div class="content">
+          <div class="town">Днепропетровск</div>
+          <div class="phone">+38 (050) 145-00-29</div>
+          <div class="phone">+38 (063) 714-49-89</div>
+          <div class="email"><a href="mailto:dnepr@artme.org">dnepr@artme.org</a></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="index-blocks hide-desktop">
+        <div class="slider-blocks">
+          <div class="slider-padding">
+            <div class="column">
+              <div class="title"><a href="#">Проекты</a></div>
+              <ul id="content-slider" class="content-slider">
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_1_1.jpg" width="575" height="922"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_2_1.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_3_1.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_4_1.jpg"></a></div>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <div class="title"><a href="#">Студия</a></div>
+              <ul id="content-slider-two" class="content-slider">
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_1_2.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_2_2.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_3_2.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_4_2.jpg"></a></div>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <div class="title"><a href="articles.html">Статьи</a></div>
+              <ul id="content-slider-three" class="content-slider">
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_1_3.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_2_3.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_3_3.jpg"></a></div>
+                </li>
+                <li>
+                  <div class="image"><a href="#"><img src="img/demo/index/slide_4_3.jpg"></a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="art-wrapper">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/1.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/2.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/3.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/4.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/1.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="item">
+                <div class="image"> <a href="#"> <img src="img/demo/2.jpg"></a> </div>
+                <div class="title"><a href="#">Стиль Эклектика</a></div>
+                <div class="date">02/01/2015</div>
+                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hFooter"></div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="feedback hide-mobile"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a></div>
+    <div class="copyright">Студия Artme, 2011-2015 год.<br>
+      Дизайн интерьера, архитектурное проектирование.</div>
+    <div class="feedback hide-desktop">
+    	<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a>
+      <a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
+    </div>
+    <div class="language">
+      <ul>
+        <li class="current">Rus</li>
+        <li><a href="#">Eng</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

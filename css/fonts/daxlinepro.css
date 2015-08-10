@@ -1,0 +1,14 @@
+@font-face {
+ font-family: 'DaxlinePro-Bold';
+ src: url('daxlinepro-bold.eot');
+ src: url('daxlinepro-bold.eot') format('embedded-opentype'),  url('daxlinepro-bold.woff') format('woff'),  url('daxlinepro-bold.ttf') format('truetype'),  url('daxlinepro-bold.svg#DaxlinePro-Bold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'DaxlinePro-Light';
+ src: url('daxlinepro-light.eot');
+ src: url('daxlinepro-light.eot') format('embedded-opentype'),  url('daxlinepro-light.woff') format('woff'),  url('daxlinepro-light.ttf') format('truetype'),  url('daxlinepro-light.svg#DaxlinePro-Light') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}

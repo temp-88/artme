@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=320" />
+<title>Текстовая страница</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="js/template.js"></script>
+</head>
+
+<body>
+<div class="main">
+  <div id="feedback" class="popup" style="display:none;">
+    <div class="title">Обратная связь</div>
+    <label>Ваш e-mail *</label>
+    <input name="" type="text">
+    <label>Контактный телефон *</label>
+    <input name="" type="text">
+    <label>Ваше сообщение *</label>
+    <textarea name="" cols="" rows=""></textarea>
+    <input name="" type="button" value="Отправить сообщение" class="btn btn-small btn-corral">
+  </div>
+  <div class="hide-mobile jquerymenu">
+    <div class="menu"><a href="#" class="btn-slide">Открыть меню</a></div>
+  </div>
+  <div id="slide-menu">
+    <ul>
+      <li><a href="#">Проекты</a>
+        <ul>
+          <li class="current"><a href="#">Все проекты</a></li>
+          <li><a href="#">Тип</a>
+            <ul>
+              <li><a href="#">Интерьеры</a></li>
+              <li><a href="#">Экстерьеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Функция</a>
+            <ul>
+              <li><a href="#">Жилье</a></li>
+              <li><a href="#">Общественные</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Место</a>
+            <ul>
+              <li><a href="#">Москва</a></li>
+              <li><a href="#">Днепропетровск</a></li>
+              <li><a href="#">Алушта</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Статус</a>
+            <ul>
+              <li><a href="#">Проект</a></li>
+              <li><a href="#">Реализация</a></li>
+              <li><a href="#">Конкурс</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Новости</a></li>
+    </ul>
+  </div>
+  <div class="wrapper">
+    <div class="hide-on-menu-open">
+      <div class="header hide-mobile">
+        <div class="left"></div>
+        <div class="center">
+          <div class="logo"><a href="index.html">Artme</a></div>
+        </div>
+        <div class="right"></div>
+        <div class="clear"></div>
+      </div>
+      
+      <!--Left column-->
+      <div class="column column-left hide-desktop">
+        <div class="logo-inside"><a href="index.html">Artme</a>
+          <div class="logo-description">архитектурная студия</div>
+        </div>
+        <div class="clear"></div>
+        <ul class="mainmenu">
+          <li><a href="#">Проекты</a></li>
+          <li class="current"><span>Студия</span></li>
+          <li><a href="#">Статьи</a></li>
+          <div class="clear"></div>
+        </ul>
+        <div id="left-menu">
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a> </li>
+            <li class="current">Контакты</li>
+          </ul>
+        </div>
+      </div>
+      <!--Right column-->
+      <div class="column column-right">
+        
+        <!--Single page-->
+        <div class="single-page">
+          <div class="content">
+            <div class="error-image"><img src="img/error_eng.png"></div>
+            <div class="search">
+          <input name="" type="text" placeholder="Поисковой запрос + Enter">
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="hFooter"></div>
+</div>
+<div class="footer">
+  <div class="wrapper">
+    <div class="feedback hide-mobile"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a></div>
+    <div class="copyright">Студия Artme, 2011-2015 год.<br>
+      Дизайн интерьера, архитектурное проектирование.</div>
+    <div class="feedback hide-desktop"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a></div>
+    <div class="language">
+      <ul>
+        <li class="current">Rus</li>
+        <li><a href="#">Eng</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>
