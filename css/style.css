@@ -91,6 +91,7 @@ a:hover {
 	margin-bottom:10px;
 	position:relative;
 	width:100%;
+	height:100%;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
@@ -150,15 +151,7 @@ a:hover {
 	float:left;
 	margin-right:30px;
 }
-.menu_title {
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 30px;
-    padding: 5px 0px;
-    display: block;
-    color: #747474;
-}
-.tags a {
+.article-footer .tags a {
 	display:inline-block;
 	height:100%;
 	background-image:url(../img/tags_sprite_bg.jpg);
@@ -168,28 +161,12 @@ a:hover {
 	padding-left:25px;
 	line-height:30px;
 	margin-left:15px;
-	margin-bottom:5px;
 	-webkit-transition-duration: 0s;
 	-o-transition-duration: 0s;
 	-moz-transition-duration: 0s;
 	transition-duration: 0s;
 }
-
-#left-menu .tags a {
-    overflow: hidden;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-right: 26px;
-}
-
-#left-menu .tags a span {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.tags a span {
+.article-footer .tags a span {
 	float:right;
 	width:26px;
 	height:26px;
@@ -197,14 +174,9 @@ a:hover {
 	background-repeat:no-repeat;
 	background-position:-574px 0;
 }
-.tags a:hover,
-.tags a.current
-{ background-position:0 -26px; }
-.tags a.current span,
-.tags a:hover span 
-{ background-position:-574px -26px; }
+.article-footer .tags a:hover { background-position:0 -26px; }
+.article-footer .tags a:hover span { background-position:-574px -26px; }
 .article-footer .pluso-more { display:none !important; }
-#left-menu .article-footer .tags {}
 .articles.category .item .title {
 	font-size:21px;
 	margin-top:20px;
@@ -237,18 +209,6 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	border-color:#b0b0b0;
 	outline: none;
 }
-select{    
-    background: #fff;
-    border-color: #e3e3e3;
-    padding: 5px 10px;
-}
-select.error,
-textarea.error,
-input.error {
-    color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
-}
 /*POPUP STYLE*/
 .popup {
 	padding:15px;
@@ -267,7 +227,6 @@ input.error {
 	margin-top:20px;
 }
 .popup textarea { height:100px; }
-.popup select { width:100%; }
 .popup .btn { margin-top:10px; }
 /*FOOTER*/
 .footer {
@@ -1314,10 +1273,7 @@ height:auto;
 height:auto !important;
 }
 }
-.project-linker a {
-	margin-right:20px;
-	margin-bottom:10px;
-}
+
 /*Chart*/
 .chart {
 	position: relative;
@@ -1376,6 +1332,13 @@ div#rotator ul li.show { z-index:500; }
 	width:100%;
 	height:100%;
 }
+.content-slider .image:hover .grayscale {
+	opacity:0;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
 .content-slider .image .grayscale {
 	opacity:1;
 	-webkit-transition: all 0.3s ease;
@@ -1411,12 +1374,6 @@ div#rotator ul li.show { z-index:500; }
 	width:100%;
 	height:auto;
 }
-.slider-blocks .column:first-child img {
-    opacity: 1;
-}
-.slider-blocks .column:last-child img {
-    opacity: 0.8;
-}
 .slider-blocks .column img {
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -1428,10 +1385,8 @@ div#rotator ul li.show { z-index:500; }
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-        opacity: 0.9;
-        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 }
-.slider-blocks .column:hover img,
 .slider-blocks .column img:hover {
 	-webkit-filter: grayscale(0%);
 	-moz-filter: grayscale(0%);
@@ -1540,8 +1495,7 @@ margin:0;
 	margin-right: 1.5%;
 	margin-bottom: 3%;
 }
-
-/*UPD 30.07.2015*/  
+/*UPD 30.07.2015*/
 .articles.category.single .item { width:75%; }
 .more-articles {
 	float:right;
@@ -1558,12 +1512,13 @@ margin:0;
 .more-articles { display:none; }
 .articles.category.single .item { width:100%; }
 }
-/*UPD 06.08.2015*/
+/*UPD 03.08.2015*/
 .project-linker a {
 	margin:0;
 	margin-right:20px;
 	margin-top:30px;
 }
+/*UPD 05.08.2015*/
 .nograyscale {
 	-webkit-filter: grayscale(0%) !important;
 	-moz-filter: grayscale(0%) !important;
