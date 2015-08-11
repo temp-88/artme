@@ -1,8 +1,6 @@
 @import "fonts/daxlinepro.css";
-* {
-	/*margin: 0;*/
-	padding: 0;
-}
+* { /*margin: 0;*/
+	padding: 0; }
 html, body { height: 100%; }
 .main { min-height: 100%; }
 * html .main { height: 100%; }
@@ -441,6 +439,10 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 .pagination { margin-top:40px; }
 .pagination .title { display:none; }
 .pagination ul li { float:left; }
+.pagination ul li.point {
+	padding:10px 10px 0px 0px;
+	color: #979797;
+}
 .pagination ul li a {
 	display:block;
 	text-transform: uppercase;
