@@ -1,6 +1,6 @@
 @import "fonts/daxlinepro.css";
 * {
-	margin: 0;
+	/*margin: 0;*/
 	padding: 0;
 }
 html, body { height: 100%; }
@@ -37,7 +37,6 @@ a:hover {
 	max-width:1920px;
 	min-width:320px;
 }
-.header { }
 .header .left, .header .right {
 	font-size:15px;
 	color:#747474;
@@ -117,7 +116,10 @@ a:hover {
 	transition: all 0.3s ease;
 	filter: none;
 }
-.articles .item .title { font-size:15px; }
+.articles .item .title {
+	font-size:15px;
+	line-height:145%;
+}
 .articles .item .date {
 	margin-bottom:10px;
 	margin-top:3px;
@@ -128,15 +130,12 @@ a:hover {
 	margin:-20px;
 }
 .articles.category .item {
-	float:left;
-	width:33.33%;
+	display:inline-block;
+	vertical-align:top;
+	width:33.1%;
 	padding:20px;
 }
 .articles.category.single { margin-top:-50px; }
-.articles.category.single .item {
-	width:100%;
-	float:none;
-}
 .articles.category.single .date {
 	margin-top:10px;
 	margin-bottom:15px;
@@ -146,7 +145,6 @@ a:hover {
 	margin-bottom:-20px;
 	margin-top:20px;
 }
-.article-footer .share { margin-top:-2px; }
 .article-footer .share, .article-footer .tags {
 	float:left;
 	margin-right:30px;
@@ -650,6 +648,11 @@ padding: 20px;
 width:50%;
 }
 }
+@media (max-width:850px) {
+.language {
+display:none;
+}
+}
 /*Менее 750*/
 @media (max-width:750px) {
 .articles .col-md-2:nth-child(4), .articles .col-md-2:nth-child(5), .articles .col-md-2:nth-child(6) {
@@ -658,10 +661,7 @@ display:none !important;
 .articles .col-md-2 {
 width:33.33%;
 }
-.language {
-display:none;
-}
-.index-blocks .row .col-md-4 .title {
+ .index-blocks .row .col-md-4 .title {
 font-size:18px;
 }
 .index-blocks .row .col-md-4 .title a {
@@ -687,6 +687,16 @@ padding-right:0%;
 }
 .form-right-col {
 padding-left:0%;
+}
+}
+@media (max-width:700px) {
+.footer .copyright {
+float:none;
+display:block;
+}
+.footer .feedback {
+margin-left:0;
+margin-top:10px;
 }
 }
 /*Менее 600*/
@@ -1273,7 +1283,6 @@ height:auto;
 height:auto !important;
 }
 }
-
 /*Chart*/
 .chart {
 	position: relative;
@@ -1509,8 +1518,12 @@ margin:0;
 }
 .more-articles .item .image { margin-bottom:20px !important; }
 @media (max-width:950px) {
-.more-articles { display:none; }
-.articles.category.single .item { width:100%; }
+.more-articles {
+display:none;
+}
+.articles.category.single .item {
+width:100%;
+}
 }
 /*UPD 03.08.2015*/
 .project-linker a {
@@ -1531,3 +1544,8 @@ margin:0;
 	-moz-transition: all 0.3s ease !important;
 	transition: all 0.3s ease !important;
 }
+.articles .pagination {
+	clear:left;
+	margin:20px 0;
+}
+.responsive-grid-5.team { margin:30px 0; }
