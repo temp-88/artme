@@ -62,8 +62,8 @@
 }
 .fancybox-close {
 	position: absolute;
-	top: -42px;
-	right: -5px;
+	top: -3px;
+	right: -45px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
@@ -90,7 +90,6 @@
 	margin-top: -18px;
 	cursor: pointer;
 	z-index: 8040;
-
 }
 .fancybox-prev span {
 	left: -65px;
@@ -186,7 +185,7 @@
 }
 
 /*Retina graphics!*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),  only screen and (min--moz-device-pixel-ratio: 1.5),  only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
  background-image: url('fancybox_sprite@2x.png');
  background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
