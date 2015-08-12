@@ -17,9 +17,11 @@
 <script type="text/javascript" src="js/packery.pkgd.min.js"></script>
 <script>
 jQuery(document).ready(function() {
-jQuery(".portfolio-page .item").flip({axis: 'y',trigger: 'hover'});
-var $container = $('#container'); $container.packery({ itemSelector: '.item', gutter: 10 });});
+jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
+//var $container = $('#container'); $container.packery({ itemSelector: '.item', gutter: 10 });
+});
 </script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 </head>
 
 <body>
@@ -130,22 +132,30 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
         </div>
       </div>
       <!--Right column-->
-      <div class="column column-right"> 
+      <div class="column column-right">
+        <ul id="filter-list" class="clearfix">
+          <li class="filter" data-filter="all">Все проекты</li>
+          <li class="filter" data-filter="webdesign">Web Design</li>
+          <li class="filter" data-filter="illustration">Illustration</li>
+        </ul>
         
         <!--Single page-->
         <div class="portfolio-page">
           <div class="content">
             <div id="container"> 
+              
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/1.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile webdesign">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/1.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop webdesign" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/1.jpg);"></div>
@@ -163,15 +173,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/2.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile illustration">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/2.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop illustration" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/2.jpg);"></div>
@@ -189,15 +201,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/3.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile webdesign">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/3.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop webdesign" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/3.jpg);"></div>
@@ -215,15 +229,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/4.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile illustration">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/4.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop illustration" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/4.jpg);"></div>
@@ -241,15 +257,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/5.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile webdesign">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/5.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop webdesign" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/5.jpg);"></div>
@@ -267,15 +285,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/6.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile illustration">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/6.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop illustration" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/6.jpg);"></div>
@@ -293,15 +313,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/7.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile webdesign">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/7.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop webdesign" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/7.jpg);"></div>
@@ -319,15 +341,17 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
               </div>
               <!--// Desktop end--> 
               <!--// Mobile-->
-              <div class="item-mobile hide-mobile">
-                <div class="image" style="height:200px;background-image:url(img/demo/portfolio/8.jpg);"></div>
-                <div class="title"><a href="#">Стиль Эклектика</a></div>
-                <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
-                <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+              <div class="hide-mobile">
+                <div class="item mobile illustration">
+                  <div class="image" style="height:200px;background-image:url(img/demo/portfolio/8.jpg);"></div>
+                  <div class="title"><a href="#">Стиль Эклектика</a></div>
+                  <div class="description">Стиль Эклектика или Эклектизм представляет собой направление архитектуры, в котором смешаны несколько разнородных стилей, с противоположными взглядами...</div>
+                  <div class="hide-mobile"><a href="article.html" class="btn btn-small btn-corral">Подробнее</a></div>
+                </div>
               </div>
               <!--// Mobile end--> 
               <!--// Desktop-->
-              <div class="item hide-desktop" style="height:275px;">
+              <div class="item hide-desktop illustration" style="height:275px;">
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                   <div class="flipper">
                     <div class="front" style="height:275px; background-image:url(img/demo/portfolio/8.jpg);"></div>
@@ -344,6 +368,7 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
                 </div>
               </div>
               <!--// Desktop end-->
+              
               <div class="clear"></div>
             </div>
           </div>
@@ -359,10 +384,7 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
     <div class="feedback hide-mobile"><a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a></div>
     <div class="copyright">Студия Artme, 2011-2015 год.<br>
       Дизайн интерьера, архитектурное проектирование.</div>
-    <div class="feedback hide-desktop">
-    	<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a>
-      <a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
-    </div>
+    <div class="feedback hide-desktop"> <a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a> <a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a> </div>
     <div class="language">
       <ul>
         <li class="current">Rus</li>
@@ -372,5 +394,13 @@ var $container = $('#container'); $container.packery({ itemSelector: '.item', gu
     <div class="clear"></div>
   </div>
 </div>
+<script type="text/javascript">
+$(function(){
+  $('#container').mixitup({
+    targetSelector: '.item',
+    transitionSpeed: 450
+  });
+});
+</script>
 </body>
 </html>
