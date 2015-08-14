@@ -1604,3 +1604,13 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	opacity: 0;
 	-moz-box-sizing: border-box;
 }
+@media (max-width:600px) {
+.portfolio-page.without-filter {
+margin-top:-70px;
+}
+}
+.portfolio-page.without-filter .item {
+	display: block;
+	opacity: 1;
+	-moz-box-sizing: border-box;
+}
