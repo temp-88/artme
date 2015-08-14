@@ -1516,15 +1516,18 @@ margin:0;
 }
 .error-image { margin-bottom:20px; }
 .single-project .flex-viewport {
-	float:left;
+	display:inline-block;
 	width:75%;
-	margin-bottom:40px;
+}
+@media (max-width:600px) {
+.single-project .flex-viewport {
+	width:100%;
+}
 }
 .single-project .flex-control-thumbs {
 	float:right;
 	width:21.8%;
 	margin:0;
-	margin-left:2%;
 }
 .single-project .flex-control-thumbs li {
 	width: 30%;
@@ -1557,7 +1560,7 @@ width:100%;
 .project-linker a {
 	margin:0;
 	margin-right:20px;
-	margin-top:30px;
+	margin-top:10px;
 }
 /*UPD 05.08.2015*/
 .nograyscale {
