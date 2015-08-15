@@ -21,7 +21,6 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
 //var $container = $('#container'); $container.packery({ itemSelector: '.item', gutter: 10 });
 });
 </script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 </head>
 
 <body>
@@ -133,14 +132,9 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
       </div>
       <!--Right column-->
       <div class="column column-right">
-        <ul id="filter-list" class="clearfix">
-          <li class="filter" data-filter="all">Все проекты</li>
-          <li class="filter" data-filter="webdesign">Web Design</li>
-          <li class="filter" data-filter="illustration">Illustration</li>
-        </ul>
         
         <!--Single page-->
-        <div class="portfolio-page">
+        <div class="portfolio-page without-filter">
           <div class="content">
             <div id="container"> 
               
@@ -407,13 +401,5 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
     <div class="clear"></div>
   </div>
 </div>
-<script type="text/javascript">
-$(function(){
-  $('#container').mixitup({
-    targetSelector: '.item',
-    transitionSpeed: 450
-  });
-});
-</script>
 </body>
 </html>
