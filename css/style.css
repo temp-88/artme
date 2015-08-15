@@ -69,13 +69,6 @@ a:hover {
 	width:125px;
 	height:106px;
 	margin:0 auto;
-	background-image:url(../img/logo.png);
-	background-repeat:no-repeat;
-}
-.header .center .logo a {
-	display:block;
-	height:100%;
-	text-indent:-9999px;
 }
 /*HOME ARTICLES*/
 .articles {
@@ -250,10 +243,8 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	float:right;
 	width:66px;
 	height:58px;
-	background-image:url(../img/footer_logo.png);
-	background-repeat:no-repeat;
 	opacity:0.5;
-	    margin-top: 12px;
+	margin-top: 12px;
 }
 /*LANGUAGE*/
 .language { margin-top:27px; }
@@ -490,13 +481,10 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	width:229px;
 	height:72px;
 	margin:0 auto;
-	background-image:url(../img/logo_inside.png);
-	background-repeat:no-repeat;
 }
 .logo-inside a {
 	display:block;
 	height:100%;
-	text-indent:-9999px;
 	position:relative;
 	z-index:10;
 }

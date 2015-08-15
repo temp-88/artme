@@ -80,7 +80,7 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
       <div class="header hide-mobile">
         <div class="left"></div>
         <div class="center">
-          <div class="logo"><a href="index.html">Artme</a></div>
+          <div class="logo"><a id="mainlogo" href="index.html"><img src="img/color_logo/1/1.png" width="125" height="106"></a></div>
         </div>
         <div class="right"></div>
         <div class="clear"></div>
@@ -88,7 +88,7 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
       
       <!--Left column-->
       <div class="column column-left hide-desktop">
-        <div class="logo-inside"><a href="index.html">Artme</a>
+        <div class="logo-inside"><a id="insidelogo" href="index.html"><img src="img/color_logo/2/1.png" width="229" height="72"></a>
           <div class="logo-description">архитектурная студия</div>
         </div>
         <div class="clear"></div>
@@ -397,9 +397,27 @@ jQuery(".portfolio-page .item.hide-desktop").flip({axis: 'y',trigger: 'hover'});
         </ul>
       </div>
     </div>
-    <div class="footer-logo"></div>
+    <div class="footer-logo" id="footerlogo"><img src="img/color_logo/3/1.png" width="66" height="5"></div>
+
     <div class="clear"></div>
   </div>
 </div>
+<script>
+var images = new Array("1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png");
+var curId = 0;
+function changeImg() {
+	curId = (++curId > images.length - 1) ? 0 : curId;
+	$("#mainlogo img").attr("src", "img/color_logo/1/" + images[curId]);
+	$("#insidelogo img").attr("src", "img/color_logo/2/" + images[curId]);
+	$("#footerlogo img").attr("src", "img/color_logo/3/" + images[curId]);
+}
+$(document)
+	.ready(function() {
+		$("#footerlogo, #mainlogo, #insidelogo")
+			.on('mouseover', function() {
+				changeImg();
+			});
+	});
+</script>
 </body>
 </html>
