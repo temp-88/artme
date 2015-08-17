@@ -112,10 +112,11 @@ a:hover {
 .articles .item .title {
 	font-size:15px;
 	line-height:145%;
+	margin-bottom:10px;
 }
 .articles .item .date {
 	margin-bottom:10px;
-	margin-top:3px;
+	margin-top:-5px;
 }
 .articles .item .description { line-height:21px; }
 .articles.category {
@@ -127,10 +128,10 @@ a:hover {
 	vertical-align:top;
 	width:33.1%;
 	padding:20px;
+	padding-top: 35px;
 }
 .articles.category.single { margin-top:-50px; }
 .articles.category.single .date {
-	margin-top:10px;
 	margin-bottom:15px;
 }
 .articles.category.single .image { margin-bottom:30px; }
@@ -715,6 +716,7 @@ margin-top:10px;
 float:none;
 display:block;
 margin-bottom:30px;
+margin-right:0;
 }
 .footer .buttons-block {
 float:none;
@@ -1538,7 +1540,7 @@ margin:0;
 .more-articles {
 	float:right;
 	width:22%;
-	margin-top: 66px;
+	margin-top:0;
 }
 .more-articles .item {
 	width:100% !important;
@@ -1667,5 +1669,6 @@ display:block;
 .map { margin:20px 0; }
 .breadcrumbs {
 	margin:15px 0;
+	margin-top:0;
 	color: #A9A9A9;
 }
