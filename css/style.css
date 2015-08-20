@@ -113,6 +113,7 @@ a:hover {
 	font-size:15px;
 	line-height:145%;
 	margin-bottom:10px;
+	margin-top: 15px;
 }
 .articles .item .date {
 	margin-bottom:10px;
@@ -131,9 +132,7 @@ a:hover {
 	padding-top: 35px;
 }
 .articles.category.single { margin-top:-50px; }
-.articles.category.single .date {
-	margin-bottom:15px;
-}
+.articles.category.single .date { margin-bottom:15px; }
 .articles.category.single .image { margin-bottom:30px; }
 .article-footer {
 	margin-bottom:-20px;
