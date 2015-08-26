@@ -1671,3 +1671,7 @@ display:block;
 	margin-top:0;
 	color: #A9A9A9;
 }
+.error {
+	border-color: #FFCACA !important;
+	background-color: #FFEEEE;
+}
