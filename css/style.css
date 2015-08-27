@@ -1675,3 +1675,19 @@ display:block;
 	border-color: #FFCACA !important;
 	background-color: #FFEEEE;
 }
+/*OLD FOOTER*/
+.hFooter { height: 123px; }
+.hFooter {
+	clear: both;
+	height:143px;
+}
+.footer {
+	height: 123px;
+	margin-top: -123px;
+}
+.language {
+	float:right;
+	margin-top:13px;
+}
+.language ul li { float:left; }
+.language ul li a { padding: 5px 10px 3px 10px; }
