@@ -1691,3 +1691,14 @@ display:block;
 }
 .language ul li { float:left; }
 .language ul li a { padding: 5px 10px 3px 10px; }
+/*pagination upd*/
+.pagination .next a, .pagination .prev a {
+	background-image:url(../img/nav_spr.png);
+	background-repeat:no-repeat;
+	display:block;
+	height:31px;
+	width:31px;
+	text-indent:-9999px;
+}
+.pagination .prev a { background-position:0 0;}
+.pagination .next a { background-position:-72px 0;}
