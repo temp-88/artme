@@ -300,6 +300,14 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	color:#FFF;
 	background-color:#007d80;
 }
+.btn-grey {
+	background-color:#E0E0E0;
+	color:#000;
+}
+.btn-grey:hover, .btn-grey:focus {
+	color:#FFF;
+	background-color:#000;
+}
 .btn-mono {
 	background-color: transparent;
 	border:1px solid #c4c4c4;
@@ -972,7 +980,8 @@ text-align:center;
 }
 .tabs__caption li {
 float:none;
-display:inline-block;
+ display: inline-block;
+ width: 170px;
 }
 }
 /*График на странице услуг*/
@@ -1700,5 +1709,5 @@ display:block;
 	width:31px;
 	text-indent:-9999px;
 }
-.pagination .prev a { background-position:0 0;}
-.pagination .next a { background-position:-72px 0;}
+.pagination .prev a { background-position:0 0; }
+.pagination .next a { background-position:-72px 0; }
