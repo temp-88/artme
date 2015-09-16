@@ -469,15 +469,15 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 .pagination ul li a {
 	display:block;
 	text-transform: uppercase;
-	color:#979797;
+	background-color: #E0E0E0;
+	color: #000;
 	font-size: 12px;
 	padding: 5px 10px 3px 10px;
-	border:1px solid #c4c4c4;
 	margin-right:10px;
 }
 .pagination ul li a:hover {
-	color:#000;
-	background-color:#e3e3e3;
+	background-color: #000;
+	color: #FFF;
 }
 .pagination ul li.current a, .pagination ul li.current a:hover {
 	background-color:#01bfc4;
@@ -1705,9 +1705,15 @@ display:block;
 	background-image:url(../img/nav_spr.png);
 	background-repeat:no-repeat;
 	display:block;
-	height:31px;
-	width:31px;
+	height:30px;
+	width:28px;
 	text-indent:-9999px;
+	-webkit-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	transition-duration: 0s;
 }
 .pagination .prev a { background-position:0 0; }
 .pagination .next a { background-position:-72px 0; }
+.pagination .prev a:hover { background-position:0 -30px; }
+.pagination .next a:hover { background-position:-72px -30px; }
