@@ -472,7 +472,7 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	background-color: #E0E0E0;
 	color: #000;
 	font-size: 12px;
-	padding: 5px 10px 3px 10px;
+	padding: 6px 10px 3px 10px;
 	margin-right:10px;
 }
 .pagination ul li a:hover {
@@ -864,6 +864,7 @@ border-top:1px solid #e3e3e3;
 padding-top:40px;
 text-align:center;
 }
+.single-project .pagination { border:0; padding:0; text-align:left; margin-bottom:30px; }
 .articles.category.single .pagination {
 border-top:0px solid #e3e3e3;
 padding-top:0px;
@@ -885,6 +886,7 @@ margin-right:10px;
 .pagination ul li.next, .pagination ul li.prev {
 display:none;
 }
+.single-project .pagination ul li.next, .single-project .pagination ul li.prev { display:inline-block; }
 .pagination .title {
 display:block;
 font-family: 'DaxlinePro-Light';
