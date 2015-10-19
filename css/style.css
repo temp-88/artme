@@ -320,6 +320,7 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 }
 /*JQUERY MOBILE MENU*/
 .jquerymenu {
+	z-index: 3;
 	position: absolute;
 	right: 0;
 	top: 55px;
@@ -344,11 +345,24 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	-moz-transition-duration: 0s;
 	transition-duration: 0s;
 }
-.jquerymenu .menu a:hover, .jquerymenu .menu a.btn-slide.active {
+/*.jquerymenu .menu a:hover, */.jquerymenu .menu a.btn-slide.active, .jquerymenu.active .menu a.btn-slide {
 	background-color: #000;
 	background-position: 50% -163px;
 }
+.jquerymenu.floating {
+	position: fixed;
+	top: 0;
+}
 /*SLIDE MENU*/
+#slide-menu.sticky-top {
+	position: fixed;
+	top: 0!important;
+}
+#slide-menu.sticky-bottom {
+	position: fixed;
+	bottom: 0;
+	top: auto!important;
+}
 #slide-menu {
 	display: none;
 	background-color: #FFF;
