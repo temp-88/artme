@@ -3,10 +3,6 @@
 html, body { height: 100%; }
 .main { min-height: 100%; }
 * html .main { height: 100%; }
-.hFooter {
-	clear: both;
-	height: 185px;
-}
 html, body {
 	font-size: 15px;
 	font-family: 'DaxlinePro-Light', Arial;
@@ -225,8 +221,6 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	padding: 40px;
 	color: #747474;
 	line-height: 21px;
-	height: 165px;
-	margin-top: -165px;
 }
 .footer .contact-town {
 	float: left;
@@ -320,7 +314,7 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 }
 /*JQUERY MOBILE MENU*/
 .jquerymenu {
-	z-index: 3;
+	z-index: 1001;
 	position: absolute;
 	right: 0;
 	top: 55px;
@@ -364,6 +358,7 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	top: auto!important;
 }
 #slide-menu {
+	z-index: 1000;
 	display: none;
 	background-color: #FFF;
 	position: absolute;
@@ -722,8 +717,6 @@ ADAPTIVE
 .footer {
 	text-align: center;
 	padding: 30px 0;
-	margin-top: -150px;
-	height: 375px;
 }
 .content-block {
 	padding-left: 5%;
@@ -1558,15 +1551,6 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .pagination .prev a:hover { background-position: 0 -30px; }
 .pagination .next a:hover { background-position: -72px -30px; }
 /*OLD FOOTER*/
-.hFooter { height: 123px; }
-.hFooter {
-	clear: both;
-	height: 143px;
-}
-.footer {
-	height: 123px;
-	margin-top: -123px;
-}
 .language {
 	float: right;
 	margin-top: 13px;
@@ -1587,11 +1571,6 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	float: none;
 	display: block;
 }
-.footer.oldfooter {
-	height: 170px;
-	margin-top: -170px;
-}
-.hFooter { height: 170px; }
 .footer.oldfooter .feedback { margin-bottom: 20px; }
 }
 .backlink {
@@ -1603,3 +1582,9 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .backlink { padding: 10px 0; }
 }
 .articles.category.single .image { margin-top: 0; }
+.main > .wrapper {
+	padding-bottom: 200px;
+}
+.footer {
+	margin-top: -170px;
+}
