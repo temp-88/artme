@@ -29,6 +29,14 @@ a:hover {
 	max-width: 1920px;
 	min-width: 320px;
 }
+.main > .wrapper:after {
+	content: "";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
 .header .left, .header .right {
 	font-size: 15px;
 	color: #747474;
