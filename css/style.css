@@ -1,8 +1,12 @@
 @import "fonts/daxlinepro.css";
 * { /*margin: 0;*/ padding: 0; }
 html, body { height: 100%; }
-.main { min-height: 100%; overflow: hidden; }
-* html .main { height: 100%; overflow: auto; }
+.main { min-height: 100%; }
+* html .main { height: 100%; }
+.hFooter {
+	clear: both;
+	height: 185px;
+}
 html, body {
 	font-size: 15px;
 	font-family: 'DaxlinePro-Light', Arial;
@@ -28,14 +32,6 @@ a:hover {
 	margin: 0 auto;
 	max-width: 1920px;
 	min-width: 320px;
-}
-.main > .wrapper:after {
-	content: "";
-	clear: both;
-	display: block;
-	visibility: hidden;
-	height: 0;
-	line-height: 0;
 }
 .header .left, .header .right {
 	font-size: 15px;
@@ -229,6 +225,8 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	padding: 40px;
 	color: #747474;
 	line-height: 21px;
+	height: 165px;
+	margin-top: -165px;
 }
 .footer .contact-town {
 	float: left;
@@ -322,7 +320,6 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 }
 /*JQUERY MOBILE MENU*/
 .jquerymenu {
-	z-index: 1001;
 	position: absolute;
 	right: 0;
 	top: 55px;
@@ -347,43 +344,17 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	-moz-transition-duration: 0s;
 	transition-duration: 0s;
 }
-/*.jquerymenu .menu a:hover, */.jquerymenu .menu a.btn-slide.active, .jquerymenu.active .menu a.btn-slide {
+.jquerymenu .menu a:hover, .jquerymenu .menu a.btn-slide.active {
 	background-color: #000;
 	background-position: 50% -163px;
 }
-.jquerymenu.floating {
-	position: fixed;
-	top: 0;
-}
 /*SLIDE MENU*/
-.body-hidden {
-	overflow: hidden;
-}
-
-#menu-overlay {
-	left: 0;
-	top: 0;
-	display: none;
-	z-index: 999;
-	background-color: rgba(0, 0, 0, .5);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-}
 #slide-menu {
-	top: 0;
-	box-sizing: border-box;
-	margin-right: 50px;
-	z-index: 1000;
 	display: none;
-	height: 100%;
-	position: fixed;
-}
-#slide-menu > ul {
-	background-color: #fff;
-	height: 100%;
+	background-color: #FFF;
+	position: absolute;
 	width: 100%;
-	overflow: auto;
+	padding-top: 106px;
 }
 #slide-menu ul li { font-size: 20px; }
 #slide-menu ul li a {
@@ -737,6 +708,8 @@ ADAPTIVE
 .footer {
 	text-align: center;
 	padding: 30px 0;
+	margin-top: -150px;
+	height: 375px;
 }
 .content-block {
 	padding-left: 5%;
@@ -1514,8 +1487,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	opacity: 0;
 	-moz-box-sizing: border-box;
 }
- @media (max-width:850px) {
-.language, .footer-logo { display: none; }
+@media (max-width:850px) {
 .buttons-block a { display: block; }
 .subscribe {
 	margin-left: 0px;
@@ -1571,12 +1543,23 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .pagination .prev a:hover { background-position: 0 -30px; }
 .pagination .next a:hover { background-position: -72px -30px; }
 /*OLD FOOTER*/
+.hFooter { height: 123px; }
+.hFooter {
+	clear: both;
+	height: 143px;
+}
+.footer {
+	height: 123px;
+	margin-top: -123px;
+}
 .language {
 	float: right;
 	margin-top: 13px;
 }
 .language ul li { float: left; }
 .language ul li a { padding: 5px 10px 3px 10px; }
+
+
 @media (max-width:850px) {
 .footer.oldfooter .feedback { margin-top: -6px; }
 }
@@ -1591,7 +1574,13 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	float: none;
 	display: block;
 }
+.footer.oldfooter {
+	height: 170px;
+	margin-top: -170px;
+}
+.hFooter { height: 170px; }
 .footer.oldfooter .feedback { margin-bottom: 20px; }
+.footer .language { display:none; }
 }
 .backlink {
 	display: block;
@@ -1602,126 +1591,19 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .backlink { padding: 10px 0; }
 }
 .articles.category.single .image { margin-top: 0; }
-.main > .wrapper {
-	padding-bottom: 200px;
+
+
+@media (max-width:600px) {
+.footer.oldfooter {
+	height: 230px;
+	margin-top: -230px;
 }
-.footer {
-	margin-top: -170px;
+.hFooter { height: 230px; }
+.footer .language {
+    display: block;
 }
-
-/* menu animated */
-.animated {
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
-.animated.infinite {
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
-@-webkit-keyframes bounceInLeft {
-	from, 60%, 75%, 90%, to {
-		-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-	}
-
-	0% {
-		opacity: 0;
-		-webkit-transform: translate3d(-3000px, 0, 0);
-		transform: translate3d(-3000px, 0, 0);
-	}
-
-	60% {
-		opacity: 1;
-		-webkit-transform: translate3d(25px, 0, 0);
-		transform: translate3d(25px, 0, 0);
-	}
-
-	75% {
-		-webkit-transform: translate3d(-10px, 0, 0);
-		transform: translate3d(-10px, 0, 0);
-	}
-
-	90% {
-		-webkit-transform: translate3d(5px, 0, 0);
-		transform: translate3d(5px, 0, 0);
-	}
-
-	to {
-		-webkit-transform: none;
-		transform: none;
-	}
+.language ul li {
+    float: none;
 }
 
-@keyframes bounceInLeft {
-	from, 60%, 75%, 90%, to {
-		-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-	}
-
-	0% {
-		opacity: 0;
-		-webkit-transform: translate3d(-3000px, 0, 0);
-		transform: translate3d(-3000px, 0, 0);
-	}
-
-	60% {
-		opacity: 1;
-		-webkit-transform: translate3d(25px, 0, 0);
-		transform: translate3d(25px, 0, 0);
-	}
-
-	75% {
-		-webkit-transform: translate3d(-10px, 0, 0);
-		transform: translate3d(-10px, 0, 0);
-	}
-
-	90% {
-		-webkit-transform: translate3d(5px, 0, 0);
-		transform: translate3d(5px, 0, 0);
-	}
-
-	to {
-		-webkit-transform: none;
-		transform: none;
-	}
-}
-
-.bounceInLeft {
-	-webkit-animation-name: bounceInLeft;
-	animation-name: bounceInLeft;
-}
-
-@-webkit-keyframes bounceOutLeft {
-	20% {
-		opacity: 1;
-		-webkit-transform: translate3d(20px, 0, 0);
-		transform: translate3d(20px, 0, 0);
-	}
-	
-	to {
-		opacity: 0;
-		-webkit-transform: translate3d(-2000px, 0, 0);
-		transform: translate3d(-2000px, 0, 0);
-	}
-}
-
-@keyframes bounceOutLeft {
-	20% {
-		opacity: 1;
-		-webkit-transform: translate3d(20px, 0, 0);
-		transform: translate3d(20px, 0, 0);
-	}
-	
-	to {
-		opacity: 0;
-		-webkit-transform: translate3d(-2000px, 0, 0);
-		transform: translate3d(-2000px, 0, 0);
-	}
-}
-
-.bounceOutLeft {
-	-webkit-animation-name: bounceOutLeft;
-	animation-name: bounceOutLeft;
 }
