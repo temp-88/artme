@@ -18,9 +18,6 @@ $(function() {
 		localStorage.setItem('tab' + ulIndex, $(this).index());
 	});
 
-    if ($('.tabs__content.active').length == 0 && $('.tabs__caption').find('.active').length != 0) {
-        $('.tabs__content:first').addClass('active')
-    }
-
 });
+
 })(jQuery);
