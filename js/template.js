@@ -74,7 +74,12 @@ function setFooter() {
 				$(window).on('resize', _this.methods.checkWidth);
 			},
 			destroy: function() {
-				_this.items.css('min-height', '');
+				if (_this.parent) {
+					_this.items.closest(_this.parent).css('min-height', '');
+				}
+				else {
+					_this.items.css('min-height', '');
+				}
 			},
 			setHeight: function() {
 				var maxH = 0;
