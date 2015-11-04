@@ -15,6 +15,12 @@ jQuery(document).ready(function() {
 	
 	/* mobile menu */
 	$('.jquerymenu').mobileMenu();
+	
+	/* items height */
+	$('.scheme-unit .inner-desc').setItemsHeight({
+		media: 950,
+		parent: '.description'
+	});
 
 });
 
@@ -28,6 +34,67 @@ function setFooter() {
 }
 
 (function( $ ) {
+	$.fn.setItemsHeight =  function(options) {
+		_this = this;
+		_this.items = $(this);
+		_this.media = options.media || false;
+		_this.height = 0;
+		_this.parent = options.parent || false;
+		_this._inited = false;
+		
+		_this.methods = {
+			checkWidth: function() {
+				if (_this.media) {
+					if (_this.media > 0) {
+						if ($(window).width() >= _this.media) {
+							_this.methods.setHeight();
+						}
+						else {
+							_this.methods.destroy();
+						}
+					}
+					else if (_this.media < 0) {
+						if ($(window).width() <= _this.media) {
+							_this.methods.setHeight();
+						}
+						else {
+							_this.methods.destroy();
+						}
+					}
+					else {
+						return false;
+					}
+				}
+				else {
+					_this.methods.destroy();
+				}
+			},
+			init: function() {
+				_this.methods.checkWidth();
+				$(window).on('resize', _this.methods.checkWidth);
+			},
+			destroy: function() {
+				_this.items.css('min-height', '');
+			},
+			setHeight: function() {
+				var maxH = 0;
+				_this.items.each(function(){
+					var h = $(this).outerHeight();
+					if (h > maxH) {
+						maxH = h;
+					}
+				});
+				if (_this.parent) {
+					_this.items.closest(_this.parent).css('min-height', maxH);
+				}
+				else {
+					_this.items.css('min-height', maxH);
+				}
+			}
+		}
+		_this.methods.init();
+	};
+	
 	$.fn.mobileMenu = function(options) {
 		_this = this;
 		_this.button = $(this);
