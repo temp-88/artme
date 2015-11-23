@@ -17,9 +17,14 @@ jQuery(document).ready(function() {
 	$('.jquerymenu').mobileMenu();
 	
 	/* items height */
+	
+
 	$('.scheme-unit .inner-desc').setItemsHeight({
 		media: 950,
 		parent: '.description'
+	});
+	$('.tabs__caption').on('click', 'li:not(.active)', function() {
+		$('.scheme-unit .inner-desc').setItemsHeight('update');
 	});
 
 });
@@ -35,69 +40,67 @@ function setFooter() {
 
 (function( $ ) {
 	$.fn.setItemsHeight =  function(options) {
-		_this = this;
-		_this.items = $(this);
-		_this.media = options.media || false;
-		_this.height = 0;
-		_this.parent = options.parent || false;
-		_this._inited = false;
+		this.items = $(this);
+		this.height = 0;
+		this._inited = false;
 		
-		_this.methods = {
-			checkWidth: function() {
-				if (_this.media) {
-					if (_this.media > 0) {
-						if ($(window).width() >= _this.media) {
-							_this.methods.setHeight();
-						}
-						else {
-							_this.methods.destroy();
-						}
-					}
-					else if (_this.media < 0) {
-						if ($(window).width() <= _this.media) {
-							_this.methods.setHeight();
-						}
-						else {
-							_this.methods.destroy();
-						}
-					}
-					else {
-						return false;
-					}
+		if (typeof options == 'object') {
+			this.options = options;
+			this.data('options', options);
+		}
+		else if(this.data('options')) {
+			this.options =  this.data('options');
+		}
+		
+		this.checkWidth = function() {
+			if (this.options.media) {
+				var winW = window.innerWidth || $(window).width();
+				if (this.options.media > 0 && winW >= this.options.media || this.options.media < 0 && winW <= this.options.media) {
+					this.setHeight();
 				}
 				else {
-					_this.methods.destroy();
-				}
-			},
-			init: function() {
-				_this.methods.checkWidth();
-				$(window).on('resize', _this.methods.checkWidth);
-			},
-			destroy: function() {
-				if (_this.parent) {
-					_this.items.closest(_this.parent).css('min-height', '');
-				}
-				else {
-					_this.items.css('min-height', '');
-				}
-			},
-			setHeight: function() {
-				var maxH = 0;
-				_this.items.each(function(){
-					var h = $(this).outerHeight();
-					if (h > maxH) {
-						maxH = h;
-					}
-				});
-				if (_this.parent) {
-					_this.items.closest(_this.parent).css('min-height', maxH);
-				}
-				else {
-					_this.items.css('min-height', maxH);
+					this.destroy();
 				}
 			}
+			else {
+				this.setHeight();
+			}
+		};
+		this.init = function() {
+			this.checkWidth();
+			
+			$(window).resize($.proxy(this.checkWidth, this));
+		};
+		this.destroy = function() {
+			if (this.options.parent) {
+				this.items.closest(this.options.parent).css('min-height', '');
+			}
+			else {
+				this.items.css('min-height', '');
+			}
+		};
+		this.setHeight = function() {
+			var maxH = 0;
+			this.items.each(function(){
+				var h = $(this).outerHeight();
+				if (h > maxH) {
+					maxH = h;
+				}
+			});
+			if (this.options.parent) {
+				this.items.closest(this.options.parent).css('min-height', maxH);
+			}
+			else {
+				this.items.css('min-height', maxH);
+			}
+		};
+		
+		if (options == 'update') {
+			this.checkWidth();
 		}
-		_this.methods.init();
+		else {
+			this.init();
+		}
 	};
 	
 	$.fn.mobileMenu = function(options) {
@@ -210,7 +213,7 @@ function setFooter() {
 				$('body').removeClass('body-hidden');
 				_this.overlay.fadeOut();
 			}
-		}
+		};
 		
 		if (_this.media) {
 			_this.methods.checkWidth();

@@ -1617,6 +1617,30 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	margin-top: -170px;
 }
 
+/*images grid*/
+.images-grid {
+	margin-bottom: -1%;
+	margin: 0 -0.5%;
+}
+.images-grid .item {
+	float: left;
+	width: 19%;
+	margin: 0 0.5%;
+	margin-bottom: 1%;
+}
+@media (max-width: 860px) {
+	.images-grid .item { width: 24%; }
+}
+@media (max-width: 700px) {
+	.images-grid .item { width: 32.33%; }
+}
+@media (max-width: 600px) {
+	.images-grid {
+		margin: 0 1%;
+		margin-bottom: -1%;
+	}
+}
+
 /* menu animated */
 .animated {
 	-webkit-animation-duration: 1s;
