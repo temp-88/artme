@@ -698,7 +698,7 @@ ADAPTIVE
 .form-left-col { padding-right: 0%; }
 .form-right-col { padding-left: 0%; }
 }
-@media (max-width:700px) {
+/*@media (max-width:700px) {
 .footer .copyright {
 	float: none;
 	display: block;
@@ -709,35 +709,17 @@ ADAPTIVE
 	/*width: 100%;*/
 	margin-bottom: 20px;
 }
-}
+}*/
 /*Менее 600*/
 @media (max-width:600px) {
-.footer .contact-town {
-	float: none;
-	display: block;
-	margin-bottom: 30px;
-	margin-right: 0;
-}
-.footer .buttons-block {
-	float: none;
-	display: block;
-	text-align: center;
-	margin-bottom: 20px;
-}
-.footer .footer-logo { display: none; }
 .header {
 	border-bottom: 1px solid #e3e3e3;
 	padding-bottom: 25px;
 	margin-bottom: 40px;
 }
-.hide-mobile { display: block; }
-.hide-desktop { display: none !important; }
 .articles, .header .right .content, .header .left .content { display: none !important; }
 .articles.category { display: block !important; }
-.footer {
-	text-align: center;
-	padding: 30px 0;
-}
+
 .content-block {
 	padding-left: 5%;
 	padding-right: 5%;
@@ -776,16 +758,6 @@ ADAPTIVE
 }
 .popup textarea { height: 100px; }
 .popup .btn { margin-top: 10px; }
-.language {
-	display: block;
-	float: none;
-	width: 100%;
-	text-align: center;
-}
-.language ul li {
-	float: none;
-	display: inline-block;
-}
 .column { padding: 0; }
 .column.column-right {
 	margin: 0;
@@ -1568,7 +1540,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 }
 .language ul li { float: left; }
 .language ul li a { padding: 5px 10px 3px 10px; }
-@media (max-width:900px) {
+/*@media (max-width:900px) {
 .subscribe {
 	margin-left: 0px;
 	margin-top: 10px;
@@ -1585,7 +1557,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	margin-top: 10px;
 }
 .footer.oldfooter .feedback { margin-bottom: 20px; }
-}
+}*/
 .backlink {
 	display: block;
 	text-align: left;
@@ -1595,12 +1567,43 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .backlink { padding: 10px 0; }
 }
 .articles.category.single .image { margin-top: 0; }
-@media (max-width:600px) {
-	.footer .language {
+@media (max-width:900px) {
+	.footer {
+		text-align: center;
+		padding: 30px 0;
+	}
+	.footer .contact-town {
+		float: none;
 		display: block;
+		margin-bottom: 30px;
+		margin-right: 0;
+	}
+	.footer .buttons-block {
+		float: none;
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer .footer-logo { display: none; }
+	.footer.oldfooter .feedback {
+		margin-top: -6px;
+		margin-left: 0;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	.footer.oldfooter .copyright {
+		float: none;
+		display: block;
+	}
+	.language {
+		display: block;
+		float: none;
+		width: 100%;
+		text-align: center;
 	}
 	.language ul li {
 		float: none;
+		display: inline-block;
 	}
 	.footer .feedback {
 		width: 100%;
@@ -1609,6 +1612,8 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 		margin-left: 10px;
 		margin-top: 0;
 	}
+	.hide-mobile { display: block; }
+	.hide-desktop { display: none !important; }
 }
 .main > .wrapper {
 	padding-bottom: 200px;
