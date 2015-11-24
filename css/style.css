@@ -706,7 +706,7 @@ ADAPTIVE
 .footer .feedback {
 	margin-left: 0;
 	margin-top: 0;
-	width: 100%;
+	/*width: 100%;*/
 	margin-bottom: 20px;
 }
 }
@@ -1516,18 +1516,10 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 }
  @media (max-width:850px) {
 .buttons-block a { display: block; }
-.subscribe {
-	margin-left: 0px;
-	margin-top: 10px;
-}
 }
 @media (max-width:600px) {
 .portfolio-page.without-filter { margin-top: -70px; }
 .buttons-block a { display: inline-block; }
-.subscribe {
-	margin-left: 10px;
-	margin-top: 0;
-}
 .breadcrumbs {
 	padding: 0 40px;
 	padding-bottom: 20px;
@@ -1576,22 +1568,23 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 }
 .language ul li { float: left; }
 .language ul li a { padding: 5px 10px 3px 10px; }
-@media (max-width:850px) {
-.footer.oldfooter .feedback { margin-top: -6px; }
-}
-@media (max-width:750px) {
-.footer.oldfooter .feedback {
-	margin-top: -6px;
-	margin-left: 0;
-	margin-bottom: 0;
+@media (max-width:900px) {
+.subscribe {
+	margin-left: 0px;
 	margin-top: 10px;
 }
 .footer.oldfooter .copyright {
 	float: none;
 	display: block;
 }
+.footer.oldfooter .feedback { margin-top: -6px; }
+.footer.oldfooter .feedback {
+	margin-top: -6px;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
 .footer.oldfooter .feedback { margin-bottom: 20px; }
-.footer .language { display:none; }
 }
 .backlink {
 	display: block;
@@ -1608,6 +1601,13 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	}
 	.language ul li {
 		float: none;
+	}
+	.footer .feedback {
+		width: 100%;
+	}
+	.subscribe {
+		margin-left: 10px;
+		margin-top: 0;
 	}
 }
 .main > .wrapper {

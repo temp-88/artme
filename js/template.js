@@ -9,16 +9,14 @@ jQuery(document).ready(function() {
 		}
 	});
 	
-	/* footer position */
+	/* Footer Position */
 	$(window).on('resize', setFooter);
 	setFooter();
 	
-	/* mobile menu */
+	/* Mobile Menu */
 	$('.jquerymenu').mobileMenu();
 	
-	/* items height */
-	
-
+	/* Items Height */
 	$('.scheme-unit .inner-desc').setItemsHeight({
 		media: 950,
 		parent: '.description'
