@@ -9,12 +9,21 @@ jQuery(document).ready(function() {
 		}
 	});
 	
-	/* footer position */
+	/* Footer Position */
 	$(window).on('resize', setFooter);
 	setFooter();
 	
-	/* mobile menu */
+	/* Mobile Menu */
 	$('.jquerymenu').mobileMenu();
+	
+	/* Items Height */
+	$('.scheme-unit .inner-desc').setItemsHeight({
+		media: 950,
+		parent: '.description'
+	});
+	$('.tabs__caption').on('click', 'li:not(.active)', function() {
+		$('.scheme-unit .inner-desc').setItemsHeight('update');
+	});
 
 });
 
@@ -28,6 +37,70 @@ function setFooter() {
 }
 
 (function( $ ) {
+	$.fn.setItemsHeight =  function(options) {
+		this.items = $(this);
+		this.height = 0;
+		this._inited = false;
+		
+		if (typeof options == 'object') {
+			this.options = options;
+			this.data('options', options);
+		}
+		else if(this.data('options')) {
+			this.options =  this.data('options');
+		}
+		
+		this.checkWidth = function() {
+			if (this.options.media) {
+				var winW = window.innerWidth || $(window).width();
+				if (this.options.media > 0 && winW >= this.options.media || this.options.media < 0 && winW <= this.options.media) {
+					this.setHeight();
+				}
+				else {
+					this.destroy();
+				}
+			}
+			else {
+				this.setHeight();
+			}
+		};
+		this.init = function() {
+			this.checkWidth();
+			
+			$(window).resize($.proxy(this.checkWidth, this));
+		};
+		this.destroy = function() {
+			if (this.options.parent) {
+				this.items.closest(this.options.parent).css('min-height', '');
+			}
+			else {
+				this.items.css('min-height', '');
+			}
+		};
+		this.setHeight = function() {
+			var maxH = 0;
+			this.items.each(function(){
+				var h = $(this).outerHeight();
+				if (h > maxH) {
+					maxH = h;
+				}
+			});
+			if (this.options.parent) {
+				this.items.closest(this.options.parent).css('min-height', maxH);
+			}
+			else {
+				this.items.css('min-height', maxH);
+			}
+		};
+		
+		if (options == 'update') {
+			this.checkWidth();
+		}
+		else {
+			this.init();
+		}
+	};
+	
 	$.fn.mobileMenu = function(options) {
 		_this = this;
 		_this.button = $(this);
@@ -138,7 +211,7 @@ function setFooter() {
 				$('body').removeClass('body-hidden');
 				_this.overlay.fadeOut();
 			}
-		}
+		};
 		
 		if (_this.media) {
 			_this.methods.checkWidth();
