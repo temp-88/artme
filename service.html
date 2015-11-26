@@ -1,425 +1,627 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=320" />
-<title>Услуги</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/tabs_localStorage.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
-<script type="text/javascript" src="js/template.js"></script>
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=320" />
+		<title>Услуги</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/tabs_localStorage.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<script type="text/javascript" src="js/template.js"></script>
+	</head>
 
-<body>
-<div class="main">
-  <div id="feedback" class="popup" style="display:none;">
-    <div class="title">Обратная связь</div>
-    <label>Ваш e-mail *</label>
-    <input name="" type="text">
-    <label>Контактный телефон *</label>
-    <input name="" type="text">
-    <label>Ваше сообщение *</label>
-    <textarea name="" cols="" rows=""></textarea>
-    <input name="" type="button" value="Отправить сообщение" class="btn btn-small btn-corral">
-  </div>
-  <div class="hide-mobile jquerymenu">
-    <div class="menu"><a href="#" class="btn-slide">Открыть меню</a></div>
-  </div>
-  <div id="slide-menu">
-    <ul>
-      <li><a href="#">Проекты</a>
-        <ul>
-          <li class="current"><a href="#">Все проекты</a></li>
-          <li><a href="#">Тип</a>
-            <ul>
-              <li><a href="#">Интерьеры</a></li>
-              <li><a href="#">Экстерьеры</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Функция</a>
-            <ul>
-              <li><a href="#">Жилье</a></li>
-              <li><a href="#">Общественные</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Место</a>
-            <ul>
-              <li><a href="#">Москва</a></li>
-              <li><a href="#">Днепропетровск</a></li>
-              <li><a href="#">Алушта</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Статус</a>
-            <ul>
-              <li><a href="#">Проект</a></li>
-              <li><a href="#">Реализация</a></li>
-              <li><a href="#">Конкурс</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Новости</a></li>
-    </ul>
-  </div>
-  <div class="wrapper">
-    <div class="hide-on-menu-open">
-      <div class="header hide-mobile">
-        <div class="left"></div>
-        <div class="center">
-          <div class="logo"><a id="mainlogo" href="index.html"><img src="img/color_logo/1/1.png" width="125" height="106"></a></div>
-        </div>
-        <div class="right"></div>
-        <div class="clear"></div>
-      </div>
-      
-      <!--Left column-->
-      <div class="column column-left hide-desktop">
-        <div class="logo-inside"><a id="insidelogo" href="index.html"><img src="img/color_logo/2/1.png" width="229" height="72"></a>
-          <div class="logo-description">архитектурная студия</div>
-        </div>
-        <div class="clear"></div>
-        <ul class="mainmenu">
-          <li><a href="#">Проекты</a></li>
-          <li class="current"><span>Студия</span></li>
-          <li><a href="#">Статьи</a></li>
-          <div class="clear"></div>
-        </ul>
-        <div id="left-menu">
-          <ul>
-            <li><a href="#">О нас</a></li>
-            <li class="current">Услуги</li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-      <!--Right column-->
-      <div class="column column-right">
-        <div class="page-header">
-          <h1>Предоставляемые услуги</h1>
-        </div>
-        
-        <!--Single page-->
-        <div class="single-page">
-          <div class="content">
-            <div class="tabs">
-              <ul class="tabs__caption">
-                <li class="active">Дизайн интерьера</li>
-                <li>Проектирование</li>
-                <li>Авторский надзор</li>
-                <li>Ремонтные работы</li>
-              </ul>
-              <div class="clear"></div>
-              <div class="tabs__content  active">
-                <div class="graphic-line">
-                  <div class="item">
-                    <div class="description"><span>Составление технического задания на проектирование</span></div>
-                    <div class="hide-desktop">
-                      <div class="square"></div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Составление<br>
-                      задания</div>
-                    <div class="hide-mobile">
-                      <div class="square"></div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Разработка вариантов планировочных решений</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Создание<br>
-                      планировок</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Подбор аналогов, составление коллажей, 3D визуализация</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Создание<br>
-                      концепции</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Разработка рабочей документации</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Разработка<br>
-                      чертежей</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Составление технического задания на проектирование</span></div>
-                    <div class="hide-desktop">
-                      <div class="square"></div>
-                    </div>
-                    <div class="title">Ремонтные<br>
-                      работы</div>
-                    <div class="hide-mobile">
-                      <div class="square"></div>
-                    </div>
-                  </div>
-                  <div class="clear"></div>
-                </div>
-                <h2>Состав дизайн-проекта:</h2>
-                <span class="grey-square"></span><strong>Создание планировок:</strong>
-                <ul>
-                  <li>Обмерочный чертеж помещений (выезд дизайнера на замеры)</li>
-                  <li>План перепланировки с указанием расположения мебели (до 2 вариантов)</li>
-                  <li>План демонтажа перегородок</li>
-                  <li>План монтажный перегородок</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание концепции:</strong>
-                <ul>
-                  <li>Стилистика будущего интерьера (коллажи)</li>
-                  <li>3D визуализация дизайна интерьера жилых помещений и кухни</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание чертежей:</strong>
-                <ul>
-                  <li>План потолков с указанием разрезов и узлов</li>
-                  <li>План расстановки и привязка электровыводов и розеток</li>
-                  <li>План расстановки и привязки осветительных приборов и выключателей</li>
-                  <li>План расположения сантехники</li>
-                  <li>План укладки напольных покрытий</li>
-                  <li>План «теплых полов»</li>
-                  <li>Развертки стен с раскладкой плитки с указанием размеров и площадей</li>
-                  <li>Ведомость отделочных материалов</li>
-                  <li>Ведомость позиций мебели и осветительных приборов</li>
-                </ul>
-                <div class="pdf-file"><a href="#">Смотреть пример<br>
-                  дизайн-проекта квартиры</a></div>
-              </div>
-              <div class="tabs__content">
-                <div class="graphic-line">
-                  <div class="item">
-                    <div class="description"><span>Составление технического задания на проектирование</span></div>
-                    <div class="hide-desktop">
-                      <div class="square"></div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Составление<br>
-                      задания</div>
-                    <div class="hide-mobile">
-                      <div class="square"></div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Разработка вариантов планировочных решений</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Создание<br>
-                      планировок</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Подбор аналогов, составление коллажей, 3D визуализация</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Создание<br>
-                      концепции</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Разработка рабочей документации</span></div>
-                    <div class="hide-desktop">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                    <div class="title">Разработка<br>
-                      чертежей</div>
-                    <div class="hide-mobile">
-                      <div class="square">
-                        <div class="square-grey"></div>
-                      </div>
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="description"><span>Составление технического задания на проектирование</span></div>
-                    <div class="hide-desktop">
-                      <div class="square"></div>
-                    </div>
-                    <div class="title">Ремонтные<br>
-                      работы</div>
-                    <div class="hide-mobile">
-                      <div class="square"></div>
-                    </div>
-                  </div>
-                  <div class="clear"></div>
-                </div>
-                <h2>Состав дизайн-проекта:</h2>
-                <span class="grey-square"></span><strong>Создание планировок:</strong>
-                <ul>
-                  <li>Обмерочный чертеж помещений (выезд дизайнера на замеры)</li>
-                  <li>План перепланировки с указанием расположения мебели (до 2 вариантов)</li>
-                  <li>План демонтажа перегородок</li>
-                  <li>План монтажный перегородок</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание концепции:</strong>
-                <ul>
-                  <li>Стилистика будущего интерьера (коллажи)</li>
-                  <li>3D визуализация дизайна интерьера жилых помещений и кухни</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание чертежей:</strong>
-                <ul>
-                  <li>План потолков с указанием разрезов и узлов</li>
-                  <li>План расстановки и привязка электровыводов и розеток</li>
-                  <li>План расстановки и привязки осветительных приборов и выключателей</li>
-                  <li>План расположения сантехники</li>
-                  <li>План укладки напольных покрытий</li>
-                  <li>План «теплых полов»</li>
-                  <li>Развертки стен с раскладкой плитки с указанием размеров и площадей</li>
-                  <li>Ведомость отделочных материалов</li>
-                  <li>Ведомость позиций мебели и осветительных приборов</li>
-                </ul>
-                <div class="pdf-file"><a href="#">Смотреть пример<br>
-                  дизайн-проекта квартиры</a></div>
-              </div>
-              <div class="tabs__content">
-                <h2>Состав дизайн-проекта:</h2>
-                <span class="grey-square"></span><strong>Создание планировок:</strong>
-                <ul>
-                  <li>Обмерочный чертеж помещений (выезд дизайнера на замеры)</li>
-                  <li>План перепланировки с указанием расположения мебели (до 2 вариантов)</li>
-                  <li>План демонтажа перегородок</li>
-                  <li>План монтажный перегородок</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание концепции:</strong>
-                <ul>
-                  <li>Стилистика будущего интерьера (коллажи)</li>
-                  <li>3D визуализация дизайна интерьера жилых помещений и кухни</li>
-                </ul>
-                <span class="grey-square"></span><strong>Создание чертежей:</strong>
-                <ul>
-                  <li>План потолков с указанием разрезов и узлов</li>
-                  <li>План расстановки и привязка электровыводов и розеток</li>
-                  <li>План расстановки и привязки осветительных приборов и выключателей</li>
-                  <li>План расположения сантехники</li>
-                  <li>План укладки напольных покрытий</li>
-                  <li>План «теплых полов»</li>
-                  <li>Развертки стен с раскладкой плитки с указанием размеров и площадей</li>
-                  <li>Ведомость отделочных материалов</li>
-                  <li>Ведомость позиций мебели и осветительных приборов</li>
-                </ul>
-                <div class="pdf-file"><a href="#">Смотреть пример<br>
-                  дизайн-проекта квартиры</a></div>
-              </div>
-              <div class="tabs__content">
-                <table cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</td>
-                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="hFooter"></div>
-</div>
-<div class="footer">
-  <div class="wrapper">
-    <div class="contact-town">
-      <div class="town">Москва</div>
-      <div class="phone">+7 (499) 403-10-91</div>
-      <div class="phone">+7 (499) 346-70-47</div>
-      <div class="email"><a href="mailto:i@artme.org"><img src="img/email_img.png"></a></div>
-    </div>
-    <div class="contact-town">
-      <div class="town">Днепропетровск</div>
-      <div class="phone">+7 (499) 403-10-91</div>
-      <div class="phone">+7 (499) 346-70-47</div>
-      <div class="email"><a href="mailto:i@artme.org"><img src="img/email_img.png"></a></div>
-    </div>
-    <div class="buttons-block"> <a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a> <a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
-      <div class="clear"></div>
-      <div class="language">
-        <ul>
-          <li class="current">Рус</li>
-          <li><a href="#">Укр</a></li>
-          <li><a href="#">Eng</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-logo" id="footerlogo"><img src="img/color_logo/3/1.png" width="66" height="5"></div>
+	<body>
+		<div class="main">
+			<div id="feedback" class="popup" style="display:none;">
+				<div class="title">
+					Обратная связь
+				</div>
+				<label>Ваш e-mail *</label>
+				<input name="" type="text">
+				<label>Контактный телефон *</label>
+				<input name="" type="text">
+				<label>Ваше сообщение *</label>
+				<textarea name="" cols="" rows=""></textarea>
+				<input name="" type="button" value="Отправить сообщение" class="btn btn-small btn-corral">
+			</div>
+			<div class="hide-mobile jquerymenu">
+				<div class="menu">
+					<a href="#" class="btn-slide">Открыть меню</a>
+				</div>
+			</div>
+			<div id="slide-menu">
+				<ul>
+					<li>
+						<a href="#">Проекты</a>
+						<ul>
+							<li class="current">
+								<a href="#">Все проекты</a>
+							</li>
+							<li>
+								<a href="#">Тип</a>
+								<ul>
+									<li>
+										<a href="#">Интерьеры</a>
+									</li>
+									<li>
+										<a href="#">Экстерьеры</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Функция</a>
+								<ul>
+									<li>
+										<a href="#">Жилье</a>
+									</li>
+									<li>
+										<a href="#">Общественные</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Место</a>
+								<ul>
+									<li>
+										<a href="#">Москва</a>
+									</li>
+									<li>
+										<a href="#">Днепропетровск</a>
+									</li>
+									<li>
+										<a href="#">Алушта</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Статус</a>
+								<ul>
+									<li>
+										<a href="#">Проект</a>
+									</li>
+									<li>
+										<a href="#">Реализация</a>
+									</li>
+									<li>
+										<a href="#">Конкурс</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Студия</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<div class="hide-on-menu-open">
+					<div class="header hide-mobile">
+						<div class="left"></div>
+						<div class="center">
+							<div class="logo">
+								<a id="mainlogo" href="index.html"><img src="img/color_logo/1/1.png" width="125" height="106"></a>
+							</div>
+						</div>
+						<div class="right"></div>
+						<div class="clear"></div>
+					</div>
 
-    <div class="clear"></div>
-  </div>
-</div>
-<script>
-var images = new Array("1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png");
-var curId = 0;
-function changeImg() {
-	curId = (++curId > images.length - 1) ? 0 : curId;
-	$("#mainlogo img").attr("src", "img/color_logo/1/" + images[curId]);
-	$("#insidelogo img").attr("src", "img/color_logo/2/" + images[curId]);
-	$("#footerlogo img").attr("src", "img/color_logo/3/" + images[curId]);
-}
-$(document)
-	.ready(function() {
-		$("#footerlogo, #mainlogo, #insidelogo")
-			.on('mouseover', function() {
-				changeImg();
+					<!--Left column-->
+					<div class="column column-left hide-desktop">
+						<div class="logo-inside">
+							<a id="insidelogo" href="index.html"><img src="img/color_logo/2/1.png" width="229" height="72"></a>
+							<div class="logo-description">
+								архитектурная студия
+							</div>
+						</div>
+						<div class="clear"></div>
+						<ul class="mainmenu">
+							<li>
+								<a href="#">Проекты</a>
+							</li>
+							<li class="current">
+								<span>Студия</span>
+							</li>
+							<li>
+								<a href="#">Статьи</a>
+							</li>
+							<div class="clear"></div>
+						</ul>
+						<div id="left-menu">
+							<ul>
+								<li>
+									<a href="#">О нас</a>
+								</li>
+								<li class="current">
+									Услуги
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--Right column-->
+					<div class="column column-right">
+						<div class="page-header">
+							<h1>Предоставляемые услуги</h1>
+						</div>
+
+						<!--Single page-->
+						<div class="single-page">
+							<div class="content">
+
+								<div class="tabs">
+									<ul class="tabs__caption">
+										<li class="active">
+											Дизайн интерьера
+										</li>
+										<li>
+											Проектирование
+										</li>
+										<li>
+											Авторский надзор
+										</li>
+										<li>
+											Ремонтные работы
+										</li>
+									</ul>
+									<div class="clear"></div>
+									<div class="tabs__content  active">
+										<div class="graphic-line">
+											<div class="item">
+												<div class="description">
+													<span>Составление технического задания на проектирование</span>
+												</div>
+												<div class="hide-desktop">
+													<div class="square"></div>
+													<div class="line"></div>
+												</div>
+												<div class="title">
+													Составление
+													<br>
+													задания
+												</div>
+												<div class="hide-mobile">
+													<div class="square"></div>
+													<div class="line"></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="description">
+													<span>Разработка вариантов планировочных решений</span>
+												</div>
+												<div class="hide-desktop">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="title">
+													Создание
+													<br>
+													планировок
+												</div>
+												<div class="hide-mobile">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="description">
+													<span>Подбор аналогов, составление коллажей, 3D визуализация</span>
+												</div>
+												<div class="hide-desktop">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="title">
+													Создание
+													<br>
+													концепции
+												</div>
+												<div class="hide-mobile">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="description">
+													<span>Разработка рабочей документации</span>
+												</div>
+												<div class="hide-desktop">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+												<div class="title">
+													Разработка
+													<br>
+													чертежей
+												</div>
+												<div class="hide-mobile">
+													<div class="square">
+														<div class="square-grey"></div>
+													</div>
+													<div class="line"></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="description">
+													<span>Составление технического задания на проектирование</span>
+												</div>
+												<div class="hide-desktop">
+													<div class="square"></div>
+												</div>
+												<div class="title">
+													Ремонтные
+													<br>
+													работы
+												</div>
+												<div class="hide-mobile">
+													<div class="square"></div>
+												</div>
+											</div>
+											<div class="clear"></div>
+										</div>
+										<h2>Состав дизайн-проекта:</h2>
+										<span class="grey-square"></span><strong>Создание планировок:</strong>
+										<ul>
+											<li>
+												Обмерочный чертеж помещений (выезд дизайнера на замеры)
+											</li>
+											<li>
+												План перепланировки с указанием расположения мебели (до 2 вариантов)
+											</li>
+											<li>
+												План демонтажа перегородок
+											</li>
+											<li>
+												План монтажный перегородок
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание концепции:</strong>
+										<ul>
+											<li>
+												Стилистика будущего интерьера (коллажи)
+											</li>
+											<li>
+												3D визуализация дизайна интерьера жилых помещений и кухни
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание чертежей:</strong>
+										<ul>
+											<li>
+												План потолков с указанием разрезов и узлов
+											</li>
+											<li>
+												План расстановки и привязка электровыводов и розеток
+											</li>
+											<li>
+												План расстановки и привязки осветительных приборов и выключателей
+											</li>
+											<li>
+												План расположения сантехники
+											</li>
+											<li>
+												План укладки напольных покрытий
+											</li>
+											<li>
+												План «теплых полов»
+											</li>
+											<li>
+												Развертки стен с раскладкой плитки с указанием размеров и площадей
+											</li>
+											<li>
+												Ведомость отделочных материалов
+											</li>
+											<li>
+												Ведомость позиций мебели и осветительных приборов
+											</li>
+										</ul>
+										<div class="pdf-file">
+											<a href="#">Смотреть пример
+											<br>
+											дизайн-проекта квартиры</a>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<div class="scheme-unit clearfixes">
+											<div class="item clearfixes">
+												<div class="description">
+													<div class="inner-desc">
+														Составление технического задания на проектирование объекта
+													</div>
+												</div>
+												<div class="title">
+													<div class="circle"></div>
+													<div class="inner-title">
+														Техническое задание
+													</div>
+												</div>
+											</div>
+		
+											<div class="item clearfixes">
+												<div class="description">
+													<div class="inner-desc">
+														Разработка вариантов планировок, создание объемно-пространственной композиции объекта, разработка дизайна экстерьера
+													</div>
+												</div>
+												<div class="title">
+													<div class="circle"></div>
+													<div class="inner-title">
+														Эскизный проект
+													</div>
+												</div>
+											</div>
+		
+											<div class="item clearfixes">
+												<div class="description">
+													<div class="inner-desc">
+														Создание рабочей документации разделов Архитектурные и Конструктивные решения
+													</div>
+												</div>
+												<div class="title">
+													<div class="circle"></div>
+													<div class="inner-title">
+														Архитектурно-строительный проект
+													</div>
+												</div>
+											</div>
+		
+											<div class="item clearfixes">
+												<div class="description">
+													<div class="inner-desc">
+														Создание рабочей документации разделов Водоснабжение и канализация, Отопление и вентиляция, Электрооборудование
+													</div>
+												</div>
+												<div class="title">
+													<div class="circle"></div>
+													<div class="inner-title">
+														Инженерный проект
+													</div>
+												</div>
+											</div>
+		
+											<div class="item clearfixes">
+												<div class="description">
+													<div class="inner-desc">
+														Авторский надзор
+													</div>
+												</div>
+												<div class="title">
+													<div class="circle"></div>
+													<div class="inner-title">
+														Строительство
+													</div>
+												</div>
+											</div>
+										</div>
+										<h2>Состав дизайн-проекта:</h2>
+										<span class="grey-square"></span><strong>Создание планировок:</strong>
+										<ul>
+											<li>
+												Обмерочный чертеж помещений (выезд дизайнера на замеры)
+											</li>
+											<li>
+												План перепланировки с указанием расположения мебели (до 2 вариантов)
+											</li>
+											<li>
+												План демонтажа перегородок
+											</li>
+											<li>
+												План монтажный перегородок
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание концепции:</strong>
+										<ul>
+											<li>
+												Стилистика будущего интерьера (коллажи)
+											</li>
+											<li>
+												3D визуализация дизайна интерьера жилых помещений и кухни
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание чертежей:</strong>
+										<ul>
+											<li>
+												План потолков с указанием разрезов и узлов
+											</li>
+											<li>
+												План расстановки и привязка электровыводов и розеток
+											</li>
+											<li>
+												План расстановки и привязки осветительных приборов и выключателей
+											</li>
+											<li>
+												План расположения сантехники
+											</li>
+											<li>
+												План укладки напольных покрытий
+											</li>
+											<li>
+												План «теплых полов»
+											</li>
+											<li>
+												Развертки стен с раскладкой плитки с указанием размеров и площадей
+											</li>
+											<li>
+												Ведомость отделочных материалов
+											</li>
+											<li>
+												Ведомость позиций мебели и осветительных приборов
+											</li>
+										</ul>
+										<div class="pdf-file">
+											<a href="#">Смотреть пример
+											<br>
+											дизайн-проекта квартиры</a>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<h2>Состав дизайн-проекта:</h2>
+										<span class="grey-square"></span><strong>Создание планировок:</strong>
+										<ul>
+											<li>
+												Обмерочный чертеж помещений (выезд дизайнера на замеры)
+											</li>
+											<li>
+												План перепланировки с указанием расположения мебели (до 2 вариантов)
+											</li>
+											<li>
+												План демонтажа перегородок
+											</li>
+											<li>
+												План монтажный перегородок
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание концепции:</strong>
+										<ul>
+											<li>
+												Стилистика будущего интерьера (коллажи)
+											</li>
+											<li>
+												3D визуализация дизайна интерьера жилых помещений и кухни
+											</li>
+										</ul>
+										<span class="grey-square"></span><strong>Создание чертежей:</strong>
+										<ul>
+											<li>
+												План потолков с указанием разрезов и узлов
+											</li>
+											<li>
+												План расстановки и привязка электровыводов и розеток
+											</li>
+											<li>
+												План расстановки и привязки осветительных приборов и выключателей
+											</li>
+											<li>
+												План расположения сантехники
+											</li>
+											<li>
+												План укладки напольных покрытий
+											</li>
+											<li>
+												План «теплых полов»
+											</li>
+											<li>
+												Развертки стен с раскладкой плитки с указанием размеров и площадей
+											</li>
+											<li>
+												Ведомость отделочных материалов
+											</li>
+											<li>
+												Ведомость позиций мебели и осветительных приборов
+											</li>
+										</ul>
+										<div class="pdf-file">
+											<a href="#">Смотреть пример
+											<br>
+											дизайн-проекта квартиры</a>
+										</div>
+									</div>
+									<div class="tabs__content">
+										<table cellspacing="0" cellpadding="0">
+											<tr>
+												<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</td>
+												<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="hFooter"></div>
+		</div>
+		<div class="footer">
+			<div class="wrapper">
+				<div class="contact-town">
+					<div class="town">
+						Москва
+					</div>
+					<div class="phone">
+						+7 (499) 403-10-91
+					</div>
+					<div class="phone">
+						+7 (499) 346-70-47
+					</div>
+					<div class="email">
+						<a href="mailto:i@artme.org"><img src="img/email_img.png"></a>
+					</div>
+				</div>
+				<div class="contact-town">
+					<div class="town">
+						Днепропетровск
+					</div>
+					<div class="phone">
+						+7 (499) 403-10-91
+					</div>
+					<div class="phone">
+						+7 (499) 346-70-47
+					</div>
+					<div class="email">
+						<a href="mailto:i@artme.org"><img src="img/email_img.png"></a>
+					</div>
+				</div>
+				<div class="buttons-block">
+					<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
+					<div class="clear"></div>
+					<div class="language">
+						<ul>
+							<li class="current">
+								Рус
+							</li>
+							<li>
+								<a href="#">Укр</a>
+							</li>
+							<li>
+								<a href="#">Eng</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-logo" id="footerlogo"><img src="img/color_logo/3/1.png" width="66" height="5">
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+		<script>
+			var images = new Array("1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png");
+			var curId = 0;
+			function changeImg() {
+				curId = (++curId > images.length - 1) ? 0 : curId;
+				$("#mainlogo img").attr("src", "img/color_logo/1/" + images[curId]);
+				$("#insidelogo img").attr("src", "img/color_logo/2/" + images[curId]);
+				$("#footerlogo img").attr("src", "img/color_logo/3/" + images[curId]);
+			}
+
+
+			$(document).ready(function() {
+				$("#footerlogo, #mainlogo, #insidelogo").on('mouseover', function() {
+					changeImg();
+				});
 			});
-	});
-</script>
-</body>
+		</script>
+	</body>
 </html>
