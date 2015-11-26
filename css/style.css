@@ -699,16 +699,16 @@ ADAPTIVE
 .form-right-col { padding-left: 0%; }
 }
 /*@media (max-width:700px) {
-.footer .copyright {
-	float: none;
-	display: block;
-}
-.footer .feedback {
-	margin-left: 0;
-	margin-top: 0;
-	/*width: 100%;*/
-	margin-bottom: 20px;
-}
+	.footer .copyright {
+		float: none;
+		display: block;
+	}
+	.footer .feedback {
+		margin-left: 0;
+		margin-top: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }*/
 /*Менее 600*/
 @media (max-width:600px) {
