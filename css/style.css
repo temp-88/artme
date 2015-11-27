@@ -892,6 +892,8 @@ h5 { font-size: 16px; }
 	display: inline-block;
 	width: 170px;
 }
+.hide-mobile { display: block; }
+.hide-desktop { display: none !important; }
 }
 /*График на странице услуг*/
 .graphic-line { margin: 40px 0; }
@@ -1612,8 +1614,8 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 		margin-left: 10px;
 		margin-top: 0;
 	}
-	.hide-mobile { display: block; }
-	.hide-desktop { display: none !important; }
+	.footer .hide-mobile { display: block; }
+	.footer .hide-desktop { display: none !important; }
 }
 .main > .wrapper {
 	padding-bottom: 200px;
@@ -1813,7 +1815,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	position: absolute;
 	left: -10px;
 	top: -13px;
-	z-index: 2; 
+	z-index: 2;
 }
 .scheme-unit .circle:after {
 	content: "";
@@ -1831,7 +1833,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	display: none;
 }
 .scheme-unit .item:last-child .title {
-	border-color: transparent; 
+	border-color: transparent;
 }
 .scheme-unit .inner-title {
 	position: relative;
@@ -1876,7 +1878,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 		padding: 0 20% 20px 0;
 	}
 	.scheme-unit .item:last-child .description {
-		border-color: transparent; 
+		border-color: transparent;
 	}
 	.scheme-unit .circle {
 		left: auto;
