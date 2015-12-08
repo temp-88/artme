@@ -17,13 +17,16 @@ jQuery(document).ready(function() {
 	$('.jquerymenu').mobileMenu();
 
 	/* Items Height */
-	//$('.scheme-unit .inner-desc').setItemsHeight({
-	//	media: 950,
-	//	parent: '.description'
-	//});
-	//$('.tabs__caption').on('click', 'li:not(.active)', function() {
-	//	$('.scheme-unit .inner-desc').setItemsHeight('update');
-	//});
+
+	if ($('.scheme-unit').length) {
+		$('.scheme-unit .inner-desc').setItemsHeight({
+			media: 950,
+			parent: '.description'
+		});
+		$('.tabs__caption').on('click', 'li:not(.active)', function() {
+			$('.scheme-unit .inner-desc').setItemsHeight('update');
+		});
+	}
 
 });
 
