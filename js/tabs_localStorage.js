@@ -2,7 +2,6 @@ jQuery(document).ready(function() {
 	
 	$('ul.tabs__caption').each(function(i) {
 		var storage = localStorage.getItem('tab' + i);
-		console.log(storage)
 		if (storage) {
 			$(this).find('li')
 				.removeClass('active')
