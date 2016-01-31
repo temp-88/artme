@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
 
 	// Fancybox
 	jQuery(".fancybox").fancybox({
-		margin: 30,
+		margin: 40,
 		helpers : {
 			overlay : {
 				locked : false,

@@ -239,7 +239,13 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	margin-right: 60px;
 }
 .footer .contact-town .phone { font-family: 'DaxlinePro-Bold', Arial; }
-.footer .copyright, .footer .feedback { float: left; }
+.footer .copyright,
+.footer .feedback {
+	display: inline-block;
+}
+.footer .copyright {
+	float: left;
+}
 .buttons-block { float: left; }
 .footer .feedback {
 	margin-left: 40px;
@@ -251,6 +257,12 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	height: 58px;
 	opacity: 0.5;
 	margin-top: 12px;
+}
+.left-footer {
+	float: left;
+}
+.right-footer {
+	float: right;
 }
 /*LANGUAGE*/
 .language { margin-top: 27px; }
@@ -270,6 +282,16 @@ input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
 	color: #000;
 	padding: 5px 10px 3px 10px;
 	margin-top: -5px;
+}
+/* CALLBACK */
+.callback {
+	float: right;
+	margin-top: 6px;
+	margin-right: 20px;
+}
+.callback .text-unit {
+	font-size: 18px;
+	margin: 0 20px;
 }
 /*BUTTON STYLE*/
 .btn {
@@ -1573,10 +1595,26 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .backlink { padding: 10px 0; }
 }
 .articles.category.single .image { margin-top: 0; }
-@media (max-width:900px) {
+@media (max-width:1240px) {
+	.footer {
+		text-align: center;
+	}
+	.left-footer, .right-footer {
+		text-align: left;
+		float: none;
+		display: inline-block;
+	}
+	.right-footer {
+		margin-top: 20px;
+	}
+}
+@media (max-width:750px) {
 	.footer {
 		text-align: center;
 		padding: 30px 0;
+	}
+	.left-footer, .right-footer {
+		text-align: center;
 	}
 	.footer .contact-town {
 		float: none;
@@ -1611,10 +1649,11 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 		float: none;
 		display: inline-block;
 	}
-	.footer .feedback {
-		width: 100%;
+	.callback {
+		margin-top: 25px;
 	}
 	.subscribe {
+		float: none;
 		margin-left: 10px;
 		margin-top: 0;
 	}
@@ -1769,7 +1808,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	animation-name: bounceOutLeft;
 }
 
-/*  */
+/* Help Classes */
 .clearfixes:after {
 	content: "";
 	clear: both;
@@ -1778,6 +1817,11 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	height: 0;
 	line-height: 0;
 }
+.thin {
+	font-family: 'DaxlinePro-Light', Arial;
+}
+
+/* Service */
 .scheme-unit {
 	font-family: DaxlinePro-Light, Arial;
 	padding: 40px 0 40px 10px;
@@ -2036,22 +2080,20 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 /* Popup */
 @media (max-width: 560px) {
 	.popup {
-		width: 350px;
+		width: 310px;
 	}
 }
 @media (max-width: 480px) {
-	.fancybox-close {
-		right: -33px!important;
-	}
 	.popup {
-		width: 300px;
+		width: 250px;
 	}
 }
 @media (max-width: 400px) {
-	.fancybox-close {
-		right: -33px!important;
-	}
 	.popup {
-		width: 220px;
+		width: 180px;
 	}
+}
+
+.heading-note {
+	padding-left: 15px;
 }
