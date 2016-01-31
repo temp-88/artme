@@ -33,6 +33,43 @@
 
 	<body class="homepage">
 		<div class="main">
+			<div id="order" class="popup" style="display:none;">
+				<form action="api.php?snippet=subscribe" data-submit="subscribeValidation">
+					<label>Ваше имя *</label>
+					<input name="name" type="text">
+					<label>Ваш номер телефона *</label>
+					<input name="phone" type="text">
+					<label>Ваш e-mail *</label>
+					<input name="email" type="text">
+					<div>
+						<input name="submit" type="submit" id="submit" value="Заказать" class="btn btn-small btn-corral">
+					</div>
+				</form>
+			</div>
+			
+			<div id="subscribe" class="popup" style="display:none;">
+				<div data-alert class="label" style="display:none;"></div>
+				<form action="api.php?snippet=subscribe" data-submit="subscribeValidation">
+					<div class="title">
+						Подписаться на e-mail рассылку
+					</div>
+					<label>Ваш e-mail *</label>
+					<input name="email" type="text">
+					<label>Ваше имя *</label>
+					<input name="name" type="text">
+					<label>Регион</label>
+					<select name="region">
+						<option value="ru_by_kz" selected="selected">Россия, Белорусия, Казахстан.</option>
+						<option value="ua_md" >Украина, Молдавия.</option>
+						<option value="other" >Европа, Америка и другие страны</option>
+					</select>
+					<input name="submit" type="submit" id="submit" value="Подписаться" class="btn btn-small btn-corral">
+					<div class="label" style="margin:0; margin-top:15px;">
+						В любой момент, если захотите вы без проблем сможете отписаться от получения рассылки.
+					</div>
+				</form>
+			</div>
+			
 			<div id="feedback" class="popup" style="display:none;">
 				<div class="title">
 					Обратная связь
@@ -292,7 +329,7 @@
 											Бесплатный выезд архитектора на объект
 										</div>
 										<div class="action">
-											<a class="btn btn-small btn-black" href="">Заказать</a>
+											<a class="fancybox btn btn-small btn-black" href="#order">Заказать</a>
 										</div>
 									</div>
 								</div>
