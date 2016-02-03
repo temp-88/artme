@@ -33,6 +33,43 @@
 
 	<body class="homepage">
 		<div class="main">
+			<div id="order" class="popup" style="display:none;">
+				<form action="api.php?snippet=subscribe" data-submit="subscribeValidation">
+					<label>Ваше имя *</label>
+					<input name="name" type="text">
+					<label>Ваш номер телефона *</label>
+					<input name="phone" type="text">
+					<label>Ваш e-mail *</label>
+					<input name="email" type="text">
+					<div>
+						<input name="submit" type="submit" id="submit" value="Заказать" class="btn btn-small btn-corral">
+					</div>
+				</form>
+			</div>
+			
+			<div id="subscribe" class="popup" style="display:none;">
+				<div data-alert class="label" style="display:none;"></div>
+				<form action="api.php?snippet=subscribe" data-submit="subscribeValidation">
+					<div class="title">
+						Подписаться на e-mail рассылку
+					</div>
+					<label>Ваш e-mail *</label>
+					<input name="email" type="text">
+					<label>Ваше имя *</label>
+					<input name="name" type="text">
+					<label>Регион</label>
+					<select name="region">
+						<option value="ru_by_kz" selected="selected">Россия, Белорусия, Казахстан.</option>
+						<option value="ua_md" >Украина, Молдавия.</option>
+						<option value="other" >Европа, Америка и другие страны</option>
+					</select>
+					<input name="submit" type="submit" id="submit" value="Подписаться" class="btn btn-small btn-corral">
+					<div class="label" style="margin:0; margin-top:15px;">
+						В любой момент, если захотите вы без проблем сможете отписаться от получения рассылки.
+					</div>
+				</form>
+			</div>
+			
 			<div id="feedback" class="popup" style="display:none;">
 				<div class="title">
 					Обратная связь
@@ -292,7 +329,7 @@
 											Бесплатный выезд архитектора на объект
 										</div>
 										<div class="action">
-											<a class="btn btn-small btn-black" href="">Заказать</a>
+											<a class="fancybox btn btn-small btn-black" href="#order">Заказать</a>
 										</div>
 									</div>
 								</div>
@@ -431,33 +468,37 @@
 			</div>
 			<div class="hFooter"></div>
 		</div>
-		<div class="footer oldfooter">
-			<div class="wrapper">
-				<div class="feedback hide-mobile">
-					<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
+		<div class="footer oldfooter ">
+			<div class="wrapper clearfixes">
+				<div class="left-footer">
+					<div class="feedback">
+						<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
+					</div>
+					<div class="copyright">
+						Студия Artme, 2011-2015 год.
+						<br>
+						Дизайн интерьера, архитектурное проектирование.
+					</div>
 				</div>
-				<div class="copyright">
-					Студия Artme, 2011-2015 год.
-					<br>
-					Дизайн интерьера, архитектурное проектирование.
+				<div class="right-footer">
+					<div class="language">
+						<ul>
+							<li class="current">
+								Rus
+							</li>
+							<li>
+								<a href="http://www.artme.org.ua">Ukr</a>
+							</li>
+							<li>
+								<a href="http://www.artme.biz">Eng</a>
+							</li>
+						</ul>
+					</div>
+					<div class="callback">
+						<span class="text-unit">Возникли вопросы?</span>
+						<a href="" class="btn btn-small btn-black">Обратный звонок</a>
+					</div>
 				</div>
-				<div class="feedback hide-desktop">
-					<a href="#feedback" class="fancybox btn btn-small btn-black">Обратная связь</a><a href="#subscribe" class="subscribe fancybox btn btn-small btn-corral">E-mail подписка</a>
-				</div>
-				<div class="language">
-					<ul>
-						<li class="current">
-							Rus
-						</li>
-						<li>
-							<a href="http://www.artme.org.ua">Ukr</a>
-						</li>
-						<li>
-							<a href="http://www.artme.biz">Eng</a>
-						</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 		<script>
