@@ -2,9 +2,10 @@ jQuery(document).ready(function() {
 
 	// Fancybox
 	jQuery(".fancybox").fancybox({
+		margin: 40,
 		helpers : {
 			overlay : {
-				locked : false
+				locked : false,
 			}
 		}
 	});
@@ -15,19 +16,6 @@ jQuery(document).ready(function() {
 
 	/* Mobile Menu */
 	$('.jquerymenu').mobileMenu();
-
-	/* Items Height */
-
-	if ($('.scheme-unit').length) {
-		$('.scheme-unit .inner-desc').setItemsHeight({
-			media: 950,
-			parent: '.description'
-		});
-		$('.tabs__caption').on('click', 'li:not(.active)', function() {
-			$('.scheme-unit .inner-desc').setItemsHeight('update');
-		});
-	}
-
 });
 
 function setFooter() {
