@@ -33,6 +33,21 @@
 
 	<body class="homepage">
 		<div class="main">
+			<div id="callback" class="popup" style="display:none;">
+				<form action="api.php?snippet=" data-submit="">
+					<div class="title">
+						Заказать обратный звонок
+					</div>
+					<label>Ваше имя *</label>
+					<input name="name" type="text">
+					<label>Ваш номер телефона *</label>
+					<input name="phone" type="text">
+					<div class="form-action">
+						<input name="submit" type="submit" id="submit" value="Позвонить мне" class="btn btn-small btn-corral">
+					</div>
+				</form>
+			</div>
+			
 			<div id="order" class="popup" style="display:none;">
 				<form action="api.php?snippet=subscribe" data-submit="subscribeValidation">
 					<label>Ваше имя *</label>
@@ -41,7 +56,7 @@
 					<input name="phone" type="text">
 					<label>Ваш e-mail *</label>
 					<input name="email" type="text">
-					<div>
+					<div class="form-action">
 						<input name="submit" type="submit" id="submit" value="Заказать" class="btn btn-small btn-corral">
 					</div>
 				</form>
@@ -496,7 +511,7 @@
 					</div>
 					<div class="callback">
 						<span class="text-unit">Возникли вопросы?</span>
-						<a href="" class="btn btn-small btn-black">Обратный звонок</a>
+						<a href="#callback" class="btn btn-small btn-black fancybox">Обратный звонок</a>
 					</div>
 				</div>
 			</div>
