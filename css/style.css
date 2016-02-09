@@ -1826,6 +1826,9 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .thin {
 	font-family: 'DaxlinePro-Light', Arial;
 }
+.form-action {
+	padding-top: 15px;
+}
 
 /* Service */
 .scheme-unit {
