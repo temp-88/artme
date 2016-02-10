@@ -174,7 +174,7 @@ a:hover {
 }
 .article-footer .tags a:hover { background-position: 0 -26px; }
 .article-footer .tags a:hover span { background-position: -574px -26px; }
-.article-footer .pluso-more { display: none !important; }
+.pluso-more { display: none !important; }
 .articles.category .item .title {
 	font-size: 21px;
 	margin-top: 20px;
@@ -1826,6 +1826,9 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .thin {
 	font-family: 'DaxlinePro-Light', Arial;
 }
+.form-action {
+	padding-top: 15px;
+}
 
 /* Service */
 .scheme-unit {
@@ -1997,7 +2000,7 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
-	top: 50%; 
+	top: 50%;
 	left: 50%;
 	width: 100%;
 	text-align: center;

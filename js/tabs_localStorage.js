@@ -1,12 +1,12 @@
 jQuery(document).ready(function() {
-	
+
 	var serviceAnchors = new Array(
 		'design',
 		'engineering',
 		'supervision',
 		'repair'
 	);
-	
+
 	$('ul.tabs__caption').each(function(i) {
 		var index = 0,
 			hash = window.location.hash.replace('#','');
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 		if (index == -1) {
 			index = 0;
 		}
-		
+
 		$(this).find('li')
 			.removeClass('active')
 			.eq(index)
@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
 			.removeClass('active')
 			.eq(index)
 			.addClass('active');
-		
+
 		if (serviceAnchors[index]) {
 			window.location.hash = serviceAnchors[index];
 		}
@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
 		localStorage.removeItem('tab' + ulIndex);
 		localStorage.setItem('tab' + ulIndex, $(this).index());
 	});
-	
+
 	/* Items Height */
 	if ($('.scheme-unit').length) {
 		$('.scheme-unit .inner-desc').setItemsHeight({
