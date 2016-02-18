@@ -2106,3 +2106,46 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 .heading-note {
 	padding-left: 15px;
 }
+
+/* Social block (contacts)*/
+#social-block {
+	padding: 5px 0;
+	margin-left: -3px ;
+}
+
+.social-link {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 3px 0 0 3px;
+}
+
+#social-block a:nth-child(1) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#social-block a:nth-child(2) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -84px 0;
+}
+
+#social-block a:nth-child(3) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -42px 0;
+}
+
+#social-block a:nth-child(4) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -105px 0;
+}
+
+#social-block a:nth-child(5) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -126px 0;
+}
