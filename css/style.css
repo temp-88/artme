@@ -2141,11 +2141,29 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 #social-block a:nth-child(4) {
 	background-image: url(../img/social_sprite.png);
 	background-repeat: no-repeat;
-	background-position: -105px 0;
+	background-position: -399px 0;
 }
 
 #social-block a:nth-child(5) {
 	background-image: url(../img/social_sprite.png);
 	background-repeat: no-repeat;
+	background-position: -105px 0;
+}
+
+#social-block a:nth-child(6) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
 	background-position: -126px 0;
+}
+
+#social-block a:nth-child(7) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -964px 0;
+}
+
+#social-block a:nth-child(8) {
+	background-image: url(../img/social_sprite.png);
+	background-repeat: no-repeat;
+	background-position: -944px 0;
 }
