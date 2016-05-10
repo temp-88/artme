@@ -2167,3 +2167,11 @@ ul#filter-list li.active, ul#filter-list li.active:hover {
 	background-repeat: no-repeat;
 	background-position: -944px 0;
 }
+
+/*----------no copy---------*/
+body {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none
+}
+
