@@ -2175,3 +2175,34 @@ body {
     -webkit-user-select: none
 }
 
+/* After Footer */
+.content-footer {
+	color: #999;
+	padding: 0 40px 0 340px;
+	
+	position: relative;
+}
+.single-cf.content-footer .inner {
+	width: 70%;
+}
+@media (max-width: 1360px) {
+	.single-cf.content-footer .inner {
+		width: 100%;
+	}
+}
+@media (max-width: 600px) {
+	.content-footer {
+		float: none;
+		padding: 40px 40px 0 40px;
+	}
+}
+.homepage .content-footer {
+	border-top: 1px solid #e3e3e3;
+	padding: 30px 40px 0;
+	margin-top: 10px;
+	float: none;
+}
+.homepage .content-footer .inner {
+	width: 100%;
+}
+
