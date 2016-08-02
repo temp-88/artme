@@ -2175,15 +2175,17 @@ body {
     -webkit-user-select: none
 }
 
-/* After Footer */
+/* Content Footer */
 .content-footer {
 	color: #999;
-	padding: 0 40px 0 340px;
-	
+	padding: 0 40px 0 340px;	
 	position: relative;
 }
 .single-cf.content-footer .inner {
 	width: 70%;
+}
+.simple-cf {
+	padding: 40px 0 0;
 }
 @media (max-width: 1360px) {
 	.single-cf.content-footer .inner {
@@ -2194,6 +2196,9 @@ body {
 	.content-footer {
 		float: none;
 		padding: 40px 40px 0 40px;
+	}
+	.simple-cf {
+		padding: 40px 0 0;
 	}
 }
 .homepage .content-footer {
